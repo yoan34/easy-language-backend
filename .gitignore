@@ -1,0 +1,13 @@
+# Fichiers de log
+*.log
+.env
+env/
+# Fichiers de configuration sensibles
+config.json
+
+# Fichiers temporaires
+__pycache__/
+*.pyc
+
+# Fichiers de données
+models/
