@@ -11,6 +11,8 @@ load_dotenv()
 
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
+french_nlp = spacy.load("fr_core_news_lg")
+english_nlp = spacy.load("en_core_web_lg")
 
 def answer_to_the_sentence(sentence):
   completion = openai.ChatCompletion.create(
@@ -19,13 +21,15 @@ def answer_to_the_sentence(sentence):
       {'role':'system', 'content':'The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.'},
       {"role": "user", "content": sentence},    
     ],
-    temperature=0.8
+    temperature=0.8,
+    max_tokens = 50
   )
   return completion.choices[0].message.content
 
 def correct_the_sentence(sentence):
-  context = """Correct spelling mistakes and meaning of the sentence if necessary.
-  Just return the correction WITHOUT comment. Return only the word 'correct' if nothing should be change otherwise only the sentence. Never comment."""
+  context = """
+  Acts as a grammar checker and robot, return the corrected sentence in this format: START corrected sentence END add comment if you want, avoid comments .
+  You don't have to take the context into account, I want you to always try to correct mistakes without context."""
   completion = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
@@ -34,7 +38,9 @@ def correct_the_sentence(sentence):
     ],
     temperature=0
   )
-  return completion.choices[0].message.content
+  correction = completion.choices[0].message.content
+  list_before_correction, list_after_correction = parseText(sentence, correction)
+  return correction
 
 def translate_the_sentence(sentence, lang='fr'):
   completion = openai.ChatCompletion.create(
@@ -47,15 +53,19 @@ def translate_the_sentence(sentence, lang='fr'):
   )
   return completion.choices[0].message.content
 
-def parseText(sentence):
-  completion = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo",
-    messages=[
-      {'role':'system', 'content':f""},
-      {"role": "user", "content": sentence},    
-    ],
-  )
-  return completion.choices[0].message.content
+
+
+def parseText(sentence, correction):
+  print(f"SENTENCE: {sentence} -- CORRECTION: {correction}")
+  doc = english_nlp(sentence)
+  for token in doc:
+    print(f"{token.text:<15}  {token.lemma_:<15}  {token.pos_:<6}  {token.dep_} --> {token.prob}")
+      
+  doc2 = english_nlp(correction)
+  if doc2:
+    for token in doc2:
+      print(f"{token.text:<15}  {token.lemma_:<15}  {token.pos_:<6}  {token.dep_} --> {token.prob}")
+  return [token.text for token in doc], [token.text for token in doc2]
 
 
 
@@ -70,10 +80,3 @@ if __name__ == "__main__":
   Le temps a passé et Antoine est devenu un guérisseur célèbre dans la région. Les gens venaient de partout pour demander son aide pour leurs animaux malades. Antoine était heureux de pouvoir aider les autres, mais il n'oubliait jamais son ami oiseau qui lui avait appris l'importance de la gentillesse et de l'empathie.
   Et c'est ainsi que l'histoire d'Antoine, le guérisseur des animaux, est devenue légendaire dans toute la région.
   """
-  a = time.time()
-  nlp = spacy.load("fr_core_news_lg")
-  b = time.time()
-  print(f"TIME TO LOAD: {b-a}")
-  doc = nlp(text)
-  for token in doc:
-    print(f"{token.text:<15}  {token.lemma_:<15}  {token.pos_:<6}  {token.dep_} --> {token.prob}")
