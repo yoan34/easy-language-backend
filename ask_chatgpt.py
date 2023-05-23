@@ -2,6 +2,7 @@ import os
 import openai
 import csv
 import time
+import ast
 from dotenv import load_dotenv
 
 # https://universaldependencies.org/u/dep/
@@ -87,13 +88,16 @@ def remove_numeration_and_bad_word(path: str, letter: str):
     for line in content:
         if line[0].isdigit():
             word = line.split('. ')[1]
-            new_content.append(word.replace('.', ''))
+            word_formatted = f"{word.replace('.', '').strip()}\n"
+            new_content.append(word_formatted)
             continue
         if 'Sorry,' in line:
             continue
         if line.startswith(letter) or line.startswith(letter.capitalize()):
-            new_content.append(line.replace('.', ''))
-    
+            line_formatted = f"{line.replace('.', '').strip()}\n"
+            new_content.append(line_formatted)
+            
+    new_content.sort()
     with open(path, 'w') as file:
         file.writelines(new_content)
         
@@ -103,39 +107,70 @@ def remove_duplicate_word(path: str):
     with open(path, 'r') as file:
         content = file.readlines()
     
-    
     with open(path, 'w') as file:
         file.writelines(list(dict.fromkeys(content)))
+  
+
+def remove_compose_word(path: str):
+    content = []
+    new_content = [] 
+    with open(path, 'r') as file:
+        content = file.readlines()
         
+    for word in content:
+        if len(word.split(' ')) == 1:
+            new_content.append(word)
+            
+    with open(path, 'w') as file:
+        file.writelines(new_content)   
+      
+
+def remove_conjugated_verb(path: str):
+    content = []
+    new_content = []
+    with open(path, 'r') as file:
+        content = file.readlines()
+        
+    for verb in content:
+        if not verb.replace('\n', '').endswith('ed') or verb == 'need\n':
+            new_content.append(verb)
+        if verb.replace('\n', '').endswith('ing'):
+            pass
+            # print(f"{verb}  -> {path}")
+        
+    with open(path, 'w') as file:
+        file.writelines(list(dict.fromkeys(new_content)))   
         
             
 
 
 def check_and_update_all_list(native, to_learn, log_file):
     
- folders = os.listdir(f"data/{native}_{to_learn}")
- for folder in folders:
-    files = os.listdir(f"data/{native}_{to_learn}/{folder}/list")
-    for file in files:
-        path = f"data/{native}_{to_learn}/{folder}/list/{file}"
-        letter = file.split('.')[0][-1]
-        remove_numeration_and_bad_word(path, letter)
-        remove_duplicate_word(path)
-        
-        
-        # with open(f"data/{native}_{to_learn}/{folder}/list/{file}", 'r') as f:
-        #     for line in f:
-        #         letter = file.split('.')[0][-1]
-        #         if 'Sorry,' in line:
-        #             print(f"data/{native}_{to_learn}/{folder}/list/{file}  --> SORRY,")
-        #             break
-        #         if not line.startswith(letter) and not line.startswith(letter.capitalize()):
-        #             # mean its start by another word that not start by the good letter or its start with number
-        #             print(f"data/{native}_{to_learn}/{folder}/list/{file} --> START: {line[0]}")
-        #             break
-         
+    words = {'verbs': 0, 'adverbs': 0, 'nouns': 0, 'adjectives': 0}
+    folders = os.listdir(f"data/{native}_{to_learn}")
+    for folder in folders:
+        files = os.listdir(f"data/{native}_{to_learn}/{folder}/list")
+        for file in files:
+            path = f"data/{native}_{to_learn}/{folder}/list/{file}"
+            letter = file.split('.')[0][-1]
+            remove_numeration_and_bad_word(path, letter)
+            remove_duplicate_word(path)
+            remove_compose_word(path)
+            if folder == 'verbs':
+                remove_conjugated_verb(path)
+
+    for folder in folders:
+        files = os.listdir(f"data/{native}_{to_learn}/{folder}/list")
+        for file in files:
+            path = f"data/{native}_{to_learn}/{folder}/list/{file}"
+            with open(path, 'r') as f:
+                words[folder] += len(f.readlines())
+    print(words)
+    print(f"total words: {sum([words[key] for key in words])}")
 
 
+def format_and_create_csv_file():
+    pass
 
 def create_all_list_of_word(native, to_learn):
     """
@@ -180,13 +215,87 @@ def create_all_list_of_word(native, to_learn):
     log_file.close()
     check_and_update_all_list(native, to_learn, log_file)
 
+
+### CSV PART
+def create_csv():
+    pass
+
 if __name__ == "__main__":
-    # Here we try to normalize the file for having a great format.
-    #   - remove the number numerotation
-    #   - remove the '.' at the end
-    #   - remove duplicate value
-    log_file = create_log_file('test1', 'test2')
-    check_and_update_all_list('test1', 'test2', log_file)
+    consonnes = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z']
+    voyelles = ['A', 'E', 'I', 'O', 'U', 'Y']
+    logfile = open('test_format_csv.txt', 'w')
+    native = "test1"
+    to_learn = "test2"
+    folders = os.listdir(f"data/{native}_{to_learn}")
+    for folder in folders:
+        base_path = f"data/{native}_{to_learn}/{folder}"
+        files = os.listdir(f"{base_path}/list")
+        if not os.path.exists(f"{base_path}/csv"):
+            os.mkdir(f"{base_path}/csv")
+            
+        for file in files:
+            letter = file.split('.')[0][-1]
+            filepath = f"data/{native}_{to_learn}/{folder}/list/{file}"
+            # file by file, we have to take the list and ask to get a CSV format.
+            words = []
+            new_content = []
+            with open(filepath, 'r') as f:
+                words = f.readlines()
+                
+            words = [word.strip() for word in words]
+            if letter.upper() in consonnes:
+                words = [f"a {line}" for line in words]
+            if letter.upper() in voyelles:
+                words = [f"an {line}" for line in words]
+            portion_size = 20
+            total_items = len(words)
+
+            for i in range(0, total_items, portion_size):
+                portion = words[i:i+portion_size]
+                
+                # Have to ask chatgpt
+                header_to_add = ''
+                if folder == 'verbs':
+                    header_to_add = "'type' to determine whether the verb is an ACTION verb or a STATE verb."
+                    
+                question = f"Transform the following list of {folder} into the expected list of lists of {folder} without comments. {portion}"
+                context = f"""
+                I'm giving you a list of {folder} and guidelines, you have to create a list of list. For each {folder}, you have to create list with:
+                - first element, the English word.
+                - second element, the translation in French. You can use two word for a better comprehension seperate by a '-'.
+                - third element, the CEFR level between A1 and C2.
+                - fourth element, the frequency of the word scored ranging from 1 for rarely used to 10 for very commonly used.
+                return only the list of the lists in python format."""
+                flag = True
+                tries = 0
+                while flag:
+                    try:
+                        if tries:
+                            print(f'TRIES: {tries}')
+                            question = f"You answer is not correct, please return only the python list.{question}"
+                        answer, tokens = answer_to_the_sentence(question, context, logfile, temperature=0.1)
+                        start_index = answer.find('[')
+                        end_index = answer.rfind(']')
+                        actual_list = ast.literal_eval(answer[start_index:end_index + 1] )
+                        flag = False
+                        print(f"GOOD: {answer}")
+                    except Exception as e:
+                        tries += 1
+                        print(f'Error occur: {e}')
+                        print(answer)
+                        time.sleep(1)
+                    
+                new_content += actual_list
+                print(tokens)
+            with open(f"data/{native}_{to_learn}/{folder}/csv/{file}.csv", "w", newline='') as f:
+                writer = csv.writer(f, delimiter=';')
+                # Write the data to the CSV file
+                writer.writerow(['english', 'french', 'level', 'frequency'])
+                writer.writerows(new_content)
+                print_all(f"File data/{native}_{to_learn}/{folder}/csv/{file} write successfully!", logfile)
+            
+    logfile.close()
+            
  
 
         
