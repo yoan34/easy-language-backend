@@ -1,0 +1,51 @@
+english;french;level;frequency
+to eat;manger;A1;10;ACTION;REGULAR
+to embrace;embrasser;B2;5;ACTION;REGULAR
+to enact;promulguer;C1;2;ACTION;REGULAR
+to encourage;encourager;B1;7;ACTION;REGULAR
+to end;terminer;B1;8;ACTION;REGULAR
+to endanger;mettre en danger;C1;3;ACTION;REGULAR
+to endorse;approuver;C1;4;ACTION;REGULAR
+to enforce;appliquer;C1;5;ACTION;REGULAR
+to engage;engager;B1;6;ACTION;REGULAR
+to enjoy;apprécier;A2;9;STATE;REGULAR
+to enlarge;agrandir;B2;5;ACTION;REGULAR
+to enlighten;éclairer;B2;4;ACTION;REGULAR
+to enlist;s'enrôler;B2;3;ACTION;REGULAR
+to enliven;animer;B2;2;ACTION;REGULAR
+to enquire;se renseigner;B2;3;ACTION;REGULAR
+to enrage;rendre furieux;C1;2;ACTION;REGULAR
+to enrich;enrichir;B2;5;ACTION;REGULAR
+to enroll;s'inscrire;B2;4;ACTION;REGULAR
+to enter;entrer;A1;10;ACTION;REGULAR
+to entertain;divertir;B2;6;ACTION;REGULAR
+to entice;attirer-par-la-ruse;C1;5;ACTION;REGULAR
+to entrust;confier;B2;7;ACTION;REGULAR
+to enumerate;énumérer;C1;4;ACTION;REGULAR
+to envelop;envelopper;B2;5;ACTION;REGULAR
+to envisage;envisager;B2;6;STATE;REGULAR
+to erase;effacer;A2;7;ACTION;REGULAR
+to escape;s'échapper;A2;8;ACTION;REGULAR
+to evacuate;évacuer;B2;6;ACTION;REGULAR
+to evaluate;évaluer;B2;7;ACTION;REGULAR
+to evaporate;évaporer;C1;4;ACTION;REGULAR
+to evolve;évoluer;B2;5;ACTION;REGULAR
+to examine;examiner;B2;6;ACTION;REGULAR
+to exchange;échanger;B1;6;ACTION;REGULAR
+to excite;exciter;B2;5;ACTION;REGULAR
+to exclaim;s'exclamer;B2;3;STATE;REGULAR
+to exercise;exercer;B2;6;ACTION;REGULAR
+to exhale;exhaler;B2;3;ACTION;REGULAR
+to exhibit;exposer;B2;5;ACTION;REGULAR
+to exorcise;exorciser;C1;2;ACTION;REGULAR
+to expand;étendre;B2;5;ACTION;REGULAR
+to expect;s'attendre à;B1;7;ACTION;REGULAR
+to expedite;accélérer;C1;3;ACTION;REGULAR
+to explain;expliquer;A2;9;ACTION;REGULAR
+to explode;exploser;B2;5;ACTION;REGULAR
+to explore;explorer;B1;6;ACTION;REGULAR
+to expose;exposer;B2;4;ACTION;REGULAR
+to express;exprimer;B1;8;ACTION;REGULAR
+to extend;étendre;B1;7;ACTION;REGULAR
+to extract;extraire;B2;6;ACTION;REGULAR
+to eye;regarder attentivement;C1;2;ACTION;REGULAR

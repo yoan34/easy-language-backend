@@ -1,0 +1,47 @@
+english;french;level;frequency
+to lament;pleurer de;B2;4;ACTION;REGULAR
+to land;atterrir;B1;6;ACTION;REGULAR
+to last;durer;B2;5;STATE;REGULAR
+to laud;louer;C1;2;ACTION;REGULAR
+to laugh;rire;A2;9;STATE;REGULAR
+to lay;poser;A2;8;ACTION;IRREGULAR
+to lead;mener;B2;5;ACTION;IRREGULAR
+to lean;s'appuyer;B2;4;ACTION;IRREGULAR
+to leap;sauter;B2;3;ACTION;IRREGULAR
+to learn;apprendre;A1;10;ACTION;REGULAR
+to leave;partir;A2;8;ACTION;REGULAR
+to lecture;donner un cours;B2;5;ACTION;REGULAR
+to lend;prêter;A2;6;ACTION;REGULAR
+to let;laisser;A2;9;ACTION;REGULAR
+to level;niveler;C1;3;ACTION;REGULAR
+to liberate;libérer;C1;4;ACTION;REGULAR
+to license;autoriser;C1;3;ACTION;REGULAR
+to lick;lécher;C1;2;ACTION;REGULAR
+to lie;mentir;B1;6;STATE;IRREGULAR
+to lift;lever;A2;8;ACTION;REGULAR
+to light;allumer;A2;6;ACTION;REGULAR
+to like;aimer;A1;10;STATE;REGULAR
+to liken;comparer à;C1;2;ACTION;REGULAR
+to limit;limiter;B2;7;ACTION;REGULAR
+to line;aligner;B2;4;ACTION;REGULAR
+to linger;s'attarder;C1;3;STATE;REGULAR
+to link;lier;B2;6;ACTION;REGULAR
+to list;énumérer;B2;5;ACTION;REGULAR
+to listen;écouter;A2;9;ACTION;REGULAR
+to live;vivre;A1;10;STATE;REGULAR
+to load;charger;A2;7;ACTION;REGULAR
+to loan;prêter;B2;4;ACTION;IRREGULAR
+to lobby;faire pression;B2;3;ACTION;REGULAR
+to locate;localiser;B1;5;ACTION;REGULAR
+to lock;verrouiller;A2;7;ACTION;REGULAR
+to log;enregistrer;B2;4;ACTION;REGULAR
+to long;désirer ardemment;C1;2;STATE;IRREGULAR
+to look;regarder;A1;10;ACTION;REGULAR
+to loom;se profiler;C1;3;STATE;REGULAR
+to loosen;desserrer;B2;4;ACTION;REGULAR
+to lose;perdre;B1;8;ACTION;IRREGULAR
+to love;aimer;A1;10;STATE;REGULAR
+to lower;abaisser;B2;6;ACTION;REGULAR
+to lull;bercer;B2;3;ACTION;REGULAR
+to lure;leurrer;C2;2;ACTION;REGULAR
+to lurk;rôder;C1;4;ACTION;IRREGULAR

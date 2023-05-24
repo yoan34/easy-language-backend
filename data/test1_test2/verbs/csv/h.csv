@@ -1,0 +1,25 @@
+english;french;level;frequency
+to hail;saluer de loin;B2;4;ACTION;REGULAR
+to harass;harceler;B2;5;ACTION;REGULAR
+to harm;nuire;B2;6;STATE;REGULAR
+to harvest;récolter;B2;5;ACTION;REGULAR
+to hatch;éclore;B2;5;STATE;REGULAR
+to heal;guérir;B2;6;STATE;REGULAR
+to help;aider;A2;10;ACTION;REGULAR
+to highlight;souligner;B2;7;ACTION;REGULAR
+to hijack;détourner;C1;4;ACTION;REGULAR
+to hike;randonner;B2;5;ACTION;REGULAR
+to hinder;empêcher;B2;6;ACTION;REGULAR
+to hire;embaucher;B1;5;ACTION;REGULAR
+to hit;frapper;A2;8;ACTION;IRREGULAR
+to hold;tenir;A2;10;STATE;IRREGULAR
+to hone;affûter;C1;2;ACTION;REGULAR
+to honor;honorer;B2;4;ACTION;REGULAR
+to hope;espérer;A2;9;STATE;REGULAR
+to hover;planer;B2;3;ACTION;REGULAR
+to hug;prendre dans ses bras;A2;7;ACTION;REGULAR
+to humble;humilier;C1;2;ACTION;REGULAR
+to hunt;chasser;B2;5;ACTION;REGULAR
+to hurry;se dépêcher;B1;7;ACTION;REGULAR
+to hurtle;filer;C1;3;ACTION;IRREGULAR
+to hypothesize;émettre une hypothèse;C1;2;STATE;REGULAR

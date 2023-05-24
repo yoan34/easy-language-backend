@@ -3,7 +3,10 @@ import openai
 import csv
 import time
 import ast
+from typing import List
 from dotenv import load_dotenv
+
+from prompt import QUESTION_FOR_LIST_FORMAT, CONTEXT_FOR_LIST_FORMAT
 
 # https://universaldependencies.org/u/dep/
 load_dotenv()
@@ -57,11 +60,11 @@ def print_all(sentence, file):
 
 # ---------------------------------------------------------------------------------------------------
 
-def create_list_of_word_and_get_token(type_word, letter, path, log_file):
+def create_list_of_word_and_get_token(type_word, letter, path, language, log_file):
     info = "always in infinitive form" if type_word == "verbs" else ""
     number = 50 if type_word in ['verbs', 'adjectives'] else 100 if type_word == 'nouns' else 20
     context = f"""Do not comment, just write one word per line without numbered it.
-    Create a list containing a minimum of {number} {type_word} {info}, if possible, otherwise include as many as possible."""
+    Create a list containing a minimum of {number} {language} {type_word} {info}, if possible, otherwise include as many as possible."""
     question = f"Write {type_word}s that start by the letter '{letter}'."
     response, tokens = answer_to_the_sentence(question, context, log_file)
     
@@ -142,8 +145,6 @@ def remove_conjugated_verb(path: str):
         file.writelines(list(dict.fromkeys(new_content)))   
         
             
-
-
 def check_and_update_all_list(native, to_learn, log_file):
     
     words = {'verbs': 0, 'adverbs': 0, 'nouns': 0, 'adjectives': 0}
@@ -204,7 +205,7 @@ def create_all_list_of_word(native, to_learn):
             
         for letter_code in range(ord('a'), ord('z')+1):
             letter = chr(letter_code)
-            tokens, words = create_list_of_word_and_get_token(type_word, letter, path, log_file)
+            tokens, words = create_list_of_word_and_get_token(type_word, letter, path, to_learn, log_file)
             print_all(f"     create file list/start_by_{letter}.csv sucessfully ({tokens} tokens)  -  ({words} {type_word})", log_file)
             tokens_per_type_word += tokens
             words_per_type_word += words
@@ -216,86 +217,95 @@ def create_all_list_of_word(native, to_learn):
     check_and_update_all_list(native, to_learn, log_file)
 
 
-### CSV PART
-def create_csv():
-    pass
+def add_article_or_to_before_word(words: List[str], letter: str, folder: str):
+    vowels = ['A', 'E', 'I', 'O', 'U', 'Y']
+    words = [word.strip() for word in words]
+    if folder == 'nouns':
+        words = [f"an {line}" for line in words] if letter.upper() in vowels else [f"a {line}" for line in words]
+    if folder == 'verbs':
+        words = [f"to {word}" for word in words]
+    return words
 
-if __name__ == "__main__":
-    consonnes = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z']
-    voyelles = ['A', 'E', 'I', 'O', 'U', 'Y']
+
+def get_more_info_for_context(folder: str):
+    if folder == 'verbs':
+        return """
+        - fifth element, the type of verb choice the appropriate value between ACTION and STATE.
+        - sixth element, choice the appropriate value between REGULAR and IRREGULAR.
+        """
+    if folder == 'adverbs':
+        return "- fifth element, determine the appropriate type of adverb."
+    if folder == 'nouns':
+        return "- fifth element, determine the appropriate type of noun between ABSTRACT and CONCRETE."
+
+
+def manage_incorrect_answer(question: str, context: str, logfile: any):
+    flag, tries = True, 0
+    while flag:
+        try:
+            if tries:
+                print(f'TRIES: {tries}')
+                question = f"You answer is not correct, please use double quote.{question}"
+            answer, tokens = answer_to_the_sentence(question, context, logfile, temperature=0.1)
+            answer = ast.literal_eval(answer[answer.find('['):answer.rfind(']') + 1] )
+            flag = False
+            print(f"GOOD: {answer}")
+        except Exception as e:
+            tries += 1
+            print(f'Error occur: {e}')
+            print(answer)
+            time.sleep(1)
+    return answer, tokens
+    
+
+### CSV PART
+def create_csv(folder: str, filename: str, base_path:str, logfile: any):
+    letter = filename.split('.')[0][-1]
+    words, new_content = [], []
+    with open(f"{base_path}/list/{filename}", 'r') as f:
+        words = f.readlines()
+        
+    words = add_article_or_to_before_word(words, letter, folder)
+
+    for i in range(0, len(words), 10):
+        info_to_add = get_more_info_for_context(folder)
+        question = QUESTION_FOR_LIST_FORMAT.format(folder, folder, words[i:i+10])
+        context = CONTEXT_FOR_LIST_FORMAT.format(folder, folder, info_to_add)
+        print(f"QUESTION: {question}")
+        print(f"CONTEXT: {context}")
+        answer, tokens = manage_incorrect_answer(question, context, logfile)
+        new_content += answer
+
+    with open(f"{base_path}/csv/{letter}.csv", "w", newline='') as f:
+        writer = csv.writer(f, delimiter=';')
+        writer.writerow(['english', 'french', 'level', 'frequency'])
+        writer.writerows(new_content)
+        print_all(f"File {base_path}/csv/{letter}.csv write successfully!", logfile)
+
+def create_all_csv(native, to_learn):
     logfile = open('test_format_csv.txt', 'w')
-    native = "test1"
-    to_learn = "test2"
     folders = os.listdir(f"data/{native}_{to_learn}")
-    for folder in folders:
+    for folder in ['nouns']:
         base_path = f"data/{native}_{to_learn}/{folder}"
         files = os.listdir(f"{base_path}/list")
         if not os.path.exists(f"{base_path}/csv"):
             os.mkdir(f"{base_path}/csv")
             
         for file in files:
-            letter = file.split('.')[0][-1]
-            filepath = f"data/{native}_{to_learn}/{folder}/list/{file}"
-            # file by file, we have to take the list and ask to get a CSV format.
-            words = []
-            new_content = []
-            with open(filepath, 'r') as f:
-                words = f.readlines()
-                
-            words = [word.strip() for word in words]
-            if letter.upper() in consonnes:
-                words = [f"a {line}" for line in words]
-            if letter.upper() in voyelles:
-                words = [f"an {line}" for line in words]
-            portion_size = 20
-            total_items = len(words)
-
-            for i in range(0, total_items, portion_size):
-                portion = words[i:i+portion_size]
-                
-                # Have to ask chatgpt
-                header_to_add = ''
-                if folder == 'verbs':
-                    header_to_add = "'type' to determine whether the verb is an ACTION verb or a STATE verb."
-                    
-                question = f"Transform the following list of {folder} into the expected list of lists of {folder} without comments. {portion}"
-                context = f"""
-                I'm giving you a list of {folder} and guidelines, you have to create a list of list. For each {folder}, you have to create list with:
-                - first element, the English word.
-                - second element, the translation in French. You can use two word for a better comprehension seperate by a '-'.
-                - third element, the CEFR level between A1 and C2.
-                - fourth element, the frequency of the word scored ranging from 1 for rarely used to 10 for very commonly used.
-                return only the list of the lists in python format."""
-                flag = True
-                tries = 0
-                while flag:
-                    try:
-                        if tries:
-                            print(f'TRIES: {tries}')
-                            question = f"You answer is not correct, please return only the python list.{question}"
-                        answer, tokens = answer_to_the_sentence(question, context, logfile, temperature=0.1)
-                        start_index = answer.find('[')
-                        end_index = answer.rfind(']')
-                        actual_list = ast.literal_eval(answer[start_index:end_index + 1] )
-                        flag = False
-                        print(f"GOOD: {answer}")
-                    except Exception as e:
-                        tries += 1
-                        print(f'Error occur: {e}')
-                        print(answer)
-                        time.sleep(1)
-                    
-                new_content += actual_list
-                print(tokens)
-            with open(f"data/{native}_{to_learn}/{folder}/csv/{file}.csv", "w", newline='') as f:
-                writer = csv.writer(f, delimiter=';')
-                # Write the data to the CSV file
-                writer.writerow(['english', 'french', 'level', 'frequency'])
-                writer.writerows(new_content)
-                print_all(f"File data/{native}_{to_learn}/{folder}/csv/{file} write successfully!", logfile)
-            
+            create_csv(folder, file, base_path, logfile) 
     logfile.close()
-            
+
+
+def create_data_for_language(native, to_learn):
+    create_all_list_of_word(native, to_learn)
+    create_all_csv(native, to_learn)
+
+
+
+if __name__ == "__main__":
+    # create_data_for_language("test1", "test2")
+    create_all_csv("test1", "test2")
+
  
 
         

@@ -1,0 +1,38 @@
+english;french;level;frequency
+to unbolt;déverrouiller;B1;5;ACTION;REGULAR
+to unclasp;détacher;B2;4;ACTION;REGULAR
+to uncoil;dérouler;B2;3;ACTION;REGULAR
+to uncover;découvrir;B1;6;ACTION;REGULAR
+to understand;comprendre;B1;10;STATE;IRREGULAR
+to undo;défaire;A2;9;ACTION;IRREGULAR
+to unfasten;défaire;B1;6;ACTION;REGULAR
+to unfurl;dérouler;C1;2;ACTION;REGULAR
+to unhook;décrocher;B2;4;ACTION;REGULAR
+to unite;unir;B1;7;ACTION;REGULAR
+to unlace;délasser;B2;2;ACTION;REGULAR
+to unleash;déchaîner;C1;4;ACTION;REGULAR
+to unmoor;détacher;C1;2;ACTION;REGULAR
+to unpick;découdre;B2;2;ACTION;REGULAR
+to unplug;débrancher;A2;6;ACTION;REGULAR
+to unravel;démêler;B2;3;ACTION;REGULAR
+to unroll;dérouler;A2;6;ACTION;REGULAR
+to unscrew;dévisser;A2;7;ACTION;REGULAR
+to unseal;désceller;C1;1;ACTION;REGULAR
+to unsnarl;démêler;C1;1;ACTION;REGULAR
+to untangle;démêler;B2;4;ACTION;REGULAR
+to untie;défaire;A2;5;ACTION;REGULAR
+to untuck;déboutonner;B1;2;ACTION;REGULAR
+to unveil;dévoiler;B2;4;ACTION;REGULAR
+to unwind;se détendre;B2;3;STATE;REGULAR
+to unzip;décompresser;B2;3;ACTION;REGULAR
+to update;mettre à jour;B1;8;ACTION;REGULAR
+to upgrade;améliorer;B2;6;ACTION;REGULAR
+to uphold;maintenir;C1;4;ACTION;REGULAR
+to uplift;élever;C1;2;ACTION;REGULAR
+to uproot;arracher;C1;3;ACTION;REGULAR
+to upset;contrarier;B2;6;STATE;REGULAR
+to urge;exhorter;C1;5;ACTION;REGULAR
+to use;utiliser;A2;10;ACTION;REGULAR
+to usher;mener;C1;4;ACTION;REGULAR
+to utilize;utiliser;B2;4;ACTION;REGULAR
+to utter;prononcer;B2;5;ACTION;REGULAR
