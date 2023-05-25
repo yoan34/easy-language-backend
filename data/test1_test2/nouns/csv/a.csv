@@ -1,0 +1,331 @@
+english;french;level;frequency;type
+an Aardvark;un tamanoir;B2;4;CONCRETE
+an Abyss;un abîme;C1;3;CONCRETE
+an Acolyte;un acolyte;C1;2;CONCRETE
+an Acrobat;un acrobate;B2;5;CONCRETE
+an Aerobics;des aérobics;B1;3;ABSTRACT
+an Aerodrome;un aérodrome;B2;4;CONCRETE
+an Aerodynamics;l'aérodynamique;B2;4;ABSTRACT
+an Aerogramme;un aerogramme;C1;1;CONCRETE
+an Aerolite;une aérolithe;C1;1;CONCRETE
+an Aerology;l'aérologie;C1;2;ABSTRACT
+Aeromechanics;Aéromécanique;C1;4;ABSTRACT
+Aerometry;Aérométrie;B2;2;ABSTRACT
+Aeronautics;Aéronautique;B2;6;ABSTRACT
+Aerophyte;Aérophyte;C1;1;CONCRETE
+Aeroplane;Avion;A2;10;CONCRETE
+Aerostat;Aérostat;C1;2;CONCRETE
+Aerothermodynamics;Aérothermodynamique;C1;2;ABSTRACT
+Aesthetics;Esthétique;B2;6;ABSTRACT
+Aether;Éther;C1;3;ABSTRACT
+Affectation;Affectation;B2;4;ABSTRACT
+an Affidavit;une attestation;C1;5;ABSTRACT
+an Affinity;une affinité;B2;4;ABSTRACT
+an Affirmation;une affirmation;B2;6;ABSTRACT
+an Affliction;une affliction;C1;3;ABSTRACT
+an Affluence;une affluence;C1;4;ABSTRACT
+an Affray;une rixe;C2;1;CONCRETE
+an Afghan;un afghan;A2;5;CONCRETE
+an Agate;une agate;B2;2;CONCRETE
+an Agenda;un ordre du jour;B2;8;ABSTRACT
+an Agglomeration;une agglomération;C1;4;CONCRETE
+an Aggrandizement;un agrandissement;C2;3;ABSTRACT
+an Aggravation;une aggravation;C1;4;ABSTRACT
+an Agility;une agilité;B2;3;CONCRETE
+an Agitation;une agitation;B2;5;ABSTRACT
+an Agony;une agonie;C1;3;CONCRETE
+an Agriculture;une agriculture;B2;7;CONCRETE
+an Agriculturist;un agriculteur;B2;3;CONCRETE
+an Ague;une fièvre;C2;1;CONCRETE
+an Aid;une aide;A2;8;CONCRETE
+an Ailment;une maladie;B2;5;CONCRETE
+Air;Air;B1;6;CONCRETE
+Aircraft;Avion;B1;6;CONCRETE
+Airfield;Terrain d'aviation;B2;3;CONCRETE
+Airline;Compagnie aérienne;B2;5;ABSTRACT
+Airmail;Courrier aérien;B2;3;CONCRETE
+Airman;Aviateur;B2;3;CONCRETE
+Airplane;Avion;A1;10;CONCRETE
+Airport;Aéroport;A1;10;CONCRETE
+Airship;Dirigeable;B2;2;CONCRETE
+Airstrip;Piste d'atterrissage;B2;4;CONCRETE
+an Aisle;une Allée;B2;6;CONCRETE
+an Alabaster;un Albâtre;C1;2;CONCRETE
+an Alarm;une Alarme;B1;7;CONCRETE
+an Albatross;un Albatros;B2;3;CONCRETE
+an Alchemy;une Alchimie;C1;2;ABSTRACT
+an Alcohol;un Alcool;A2;9;CONCRETE
+an Alcove;une Alcôve;C1;4;CONCRETE
+an Ale;une Bière;B2;5;CONCRETE
+an Algebra;une Algèbre;B2;5;ABSTRACT
+an Algorithm;un Algorithme;B2;6;ABSTRACT
+Alias;un Alias;B2;5;ABSTRACT
+Alibi;un Alibi;B2;5;ABSTRACT
+Alice;une Alice;A2;3;CONCRETE
+Alien;un Extraterrestre;B1;4;CONCRETE
+Alignment;un Alignement;B2;4;CONCRETE
+Alimony;une Pension alimentaire;C1;2;ABSTRACT
+Alkali;un Alcali;C1;1;CONCRETE
+Allergy;une Allergie;A2;7;ABSTRACT
+Alley;une Allée;A2;5;CONCRETE
+Alleyway;une Ruelle;B2;3;CONCRETE
+Alligator;un alligator;B1;3;CONCRETE
+Alloy;un alliage;B2;4;CONCRETE
+Almanac;un almanach;C1;2;CONCRETE
+Almond;une amande;A2;5;CONCRETE
+Aloe;une aloès;B2;2;CONCRETE
+Alpaca;un alpaga;A2;3;CONCRETE
+Alphabet;un alphabet;A1;10;CONCRETE
+Altar;un autel;B2;4;CONCRETE
+Altercation;une altercation;C1;3;ABSTRACT
+Alternative;une alternative;B2;7;ABSTRACT
+Aluminium;Aluminium;B2;8;CONCRETE
+Amalgam;Amalgame;B2;4;CONCRETE
+Amazement;Étonnement;B2;4;ABSTRACT
+Ambassador;Ambassadeur;B2;6;CONCRETE
+Amber;Ambre;B2;5;CONCRETE
+Ambiguity;Ambiguïté;C1;4;ABSTRACT
+Ambition;Ambition;B1;7;ABSTRACT
+Ambulance;Ambulance;A2;8;CONCRETE
+Amendment;Amendement;C1;3;ABSTRACT
+Amethyst;Améthyste;C1;3;CONCRETE
+Ammo;Munition;B1;6;CONCRETE
+Ammonia;Ammoniac;B2;5;CONCRETE
+Ammunition;Munition;B2;6;CONCRETE
+Amnesty;Amnistie;C1;4;ABSTRACT
+Amoeba;Amibe;B2;3;CONCRETE
+Ampersand;esperluette;C2;2;CONCRETE
+Amphibian;Amphibien;B2;4;CONCRETE
+Amphitheatre;Amphithéâtre;B2;4;CONCRETE
+Amplifier;Amplificateur;B2;5;CONCRETE
+Amplitude;Amplitude;B2;5;ABSTRACT
+an Amulet;un amulette;B1;4;CONCRETE
+an Anaesthesia;une anesthésie;B2;5;ABSTRACT
+an Anaesthetic;un anesthésique;B2;4;CONCRETE
+an Anagram;un anagramme;C1;2;ABSTRACT
+an Anatomy;une anatomie;B2;5;ABSTRACT
+an Ancestor;un ancêtre;A2;6;CONCRETE
+an Anchor;une ancre;B2;5;CONCRETE
+an Anchovy;un anchois;A2;3;CONCRETE
+an Anecdote;une anecdote;B2;6;ABSTRACT
+an Anemia;une anémie;B2;4;ABSTRACT
+an Anemometer;un Anémomètre;B2;3;CONCRETE
+an Anesthesia;une Anesthésie;B2;4;ABSTRACT
+an Anger;une Colère;B1;7;ABSTRACT
+an Angina;une Angine;B2;5;CONCRETE
+an Angle;un Angle;A2;8;CONCRETE
+an Angler;un Pêcheur à la ligne;B2;2;CONCRETE
+an Angling;la Pêche à la ligne;B2;3;CONCRETE
+an Angora;un Angora;B2;3;CONCRETE
+an Anguish;un Angoisse;C1;4;ABSTRACT
+an Animal;un Animal;A1;10;CONCRETE
+Animation;Animation;B1;6;CONCRETE
+Ankle;Cheville;A2;5;CONCRETE
+Annex;Annexe;B2;4;CONCRETE
+Anniversary;Anniversaire;A2;5;CONCRETE
+Announcement;Annonce;B2;6;CONCRETE
+Annuity;Rente;C1;2;ABSTRACT
+Anomaly;Anomalie;C1;3;ABSTRACT
+Anonymous;Anonyme;B2;5;ABSTRACT
+Answer;Réponse;A2;8;ABSTRACT
+Ant;Fourmi;A2;5;CONCRETE
+Antagonism;Antagonisme;C1;6;ABSTRACT
+Antarctica;Antarctique;B2;5;CONCRETE
+Anteater;Fourmilier;B2;3;CONCRETE
+Antelope;Antilope;B2;4;CONCRETE
+Antenna;Antenne;A2;7;CONCRETE
+Anthem;Hymne;B2;5;CONCRETE
+Anthology;Anthologie;C1;3;ABSTRACT
+Anthropology;Anthropologie;B2;4;ABSTRACT
+Antibody;Anticorps;B2;6;CONCRETE
+Antidote;Antidote;B2;5;CONCRETE
+an Antigen;un antigène;B2;5;CONCRETE
+an Antihistamine;un antihistaminique;B2;3;CONCRETE
+an Antimony;un antimoine;B2;2;CONCRETE
+an Antipathy;une antipathie;B2;4;ABSTRACT
+an Antiquarian;un antiquaire;C1;2;CONCRETE
+an Antique;un objet ancien;B2;5;CONCRETE
+an Antiquity;une antiquité;B2;5;CONCRETE
+an Antiseptic;un antiseptique;B2;4;CONCRETE
+an Antithesis;une antithèse;C1;3;ABSTRACT
+an Antler;un bois de cerf;B2;4;CONCRETE
+an Anxiety;une anxiété;B2;6;ABSTRACT
+an Anybody;n'importe qui;A2;3;CONCRETE
+an Anything;n'importe quoi;A2;3;CONCRETE
+an Anywhere;n'importe où;A2;4;CONCRETE
+an Apartment;un appartement;A1;10;CONCRETE
+an Apathy;une apathie;C1;2;ABSTRACT
+an Ape;un singe;A2;5;CONCRETE
+an Aperitif;un apéritif;B2;4;CONCRETE
+an Aperture;une ouverture;B2;4;CONCRETE
+an Apex;un sommet;C1;3;CONCRETE
+Aphid;un puceron;A2;6;CONCRETE
+Aphorism;un aphorisme;C1;3;ABSTRACT
+Aphrodisiac;un aphrodisiaque;C1;3;CONCRETE
+Apocalypse;une apocalypse;C1;5;ABSTRACT
+Apology;des excuses;B2;7;ABSTRACT
+Apostle;un apôtre;C1;4;CONCRETE
+Apothecary;un apothicaire;C2;2;CONCRETE
+Apparatus;un appareil;B2;6;CONCRETE
+Apparel;un habillement;B2;4;CONCRETE
+Appeal;un appel;B2;7;ABSTRACT
+an Appearance;une Apparence;B2;7;ABSTRACT
+an Appendage;un Appendice;B2;4;CONCRETE
+an Appendectomy;une Appendicectomie;C1;2;ABSTRACT
+an Appendicitis;une Appendicite;B2;4;ABSTRACT
+an Appetite;une Appétence;C1;5;ABSTRACT
+an Appetizer;un Apéritif;B2;5;CONCRETE
+an Applause;un Applaudissement;B2;5;CONCRETE
+an Apple;une Pomme;A1;10;CONCRETE
+an Applesauce;une Compote de pommes;B2;3;CONCRETE
+an Application;une Application;B1;9;ABSTRACT
+an Appointment;un rendez-vous;B2;8;CONCRETE
+an Appraisal;une évaluation;B2;5;ABSTRACT
+an Appreciation;une appréciation;B2;5;ABSTRACT
+an Apprehension;une appréhension;C1;4;ABSTRACT
+an Apprentice;un apprenti;B1;4;CONCRETE
+an Approach;une approche;B2;6;ABSTRACT
+an Approval;une approbation;B2;5;ABSTRACT
+an Apricot;un abricot;A2;6;CONCRETE
+an Apron;un tablier;A2;6;CONCRETE
+an Aquarium;un aquarium;A2;7;CONCRETE
+an Aqueduct;un aqueduc;B2;5;CONCRETE
+an Arbitration;une arbitrage;C1;3;ABSTRACT
+an Arbor;une tonnelle;A2;2;CONCRETE
+an Arcade;une arcade;B2;4;CONCRETE
+an Arch;une arche;B2;5;CONCRETE
+an Archaeologist;un archéologue;B2;4;CONCRETE
+an Archaeology;une archéologie;B2;4;ABSTRACT
+an Archer;un archer;A2;4;CONCRETE
+an Archery;un tir à l'arc;B2;3;CONCRETE
+an Archipelago;un archipel;B2;5;CONCRETE
+an Architect;un architecte;C1;6;CONCRETE
+an Architecture;une architecture;B2;5;ABSTRACT
+an Archive;une archive;B2;4;CONCRETE
+an Area;une zone;A2;8;CONCRETE
+an Arena;une arène;B2;4;CONCRETE
+an Argument;un argument;B2;7;ABSTRACT
+an Aristocracy;une aristocratie;C1;3;ABSTRACT
+an Aristocrat;un aristocrate;C1;3;CONCRETE
+an Arm;un bras;A2;6;CONCRETE
+an Armada;une armada;C1;3;CONCRETE
+an Armament;un Armement;B2;4;CONCRETE
+an Armchair;un Fauteuil;A2;5;CONCRETE
+an Armistice;un Armistice;B2;3;ABSTRACT
+an Armor;une Armure;B2;4;CONCRETE
+an Armour;une Armure;B2;4;CONCRETE
+an Armrest;un Accoudoir;A2;3;CONCRETE
+an Army;une Armée;A2;7;CONCRETE
+an Aroma;un Arôme;B1;5;CONCRETE
+an Aromatherapy;une Aromathérapie;B2;3;ABSTRACT
+an Aromatics;des Arômes;B2;3;CONCRETE
+an Arousal;une Excitation;B2;5;ABSTRACT
+an Arrangement;un Arrangement;B2;7;ABSTRACT
+an Array;un Ensemble;B2;6;CONCRETE
+an Arrears;un Arriéré;C1;3;ABSTRACT
+an Arrest;une Arrestation;B2;6;CONCRETE
+an Arrival;une Arrivée;A2;8;CONCRETE
+an Arrow;une Flèche;A2;6;CONCRETE
+an Arsenal;un Arsenal;B2;5;CONCRETE
+an Arsenic;de l'arsenic;B2;3;CONCRETE
+an Arson;un Incendie criminel;C1;2;ABSTRACT
+Art;Art;B2;8;ABSTRACT
+Artefact;Artéfact;B2;5;CONCRETE
+Artemis;Artémis;C2;1;ABSTRACT
+Artery;Artère;B2;5;CONCRETE
+Artichoke;Artichaut;B2;3;CONCRETE
+Article;Article;B1;10;ABSTRACT
+Artifice;Artifice;C1;4;ABSTRACT
+Artillery;Artillerie;B2;4;CONCRETE
+Artist;Artiste;B1;8;CONCRETE
+Artistry;Artisanat;C1;3;ABSTRACT
+an Artwork;une œuvre d'art;B2;6;CONCRETE
+an Asbestos;un amiante;B2;3;CONCRETE
+an Ascendancy;une ascendance;C1;2;ABSTRACT
+an Ascent;une ascension;B2;5;CONCRETE
+an Ascot;un ascot;C1;1;CONCRETE
+an Ash;un cendre;B2;4;CONCRETE
+an Ashtray;un cendrier;A2;4;CONCRETE
+an Asia;une Asie;A2;7;CONCRETE
+an Asparagus;une asperge;A2;3;CONCRETE
+an Aspect;un aspect;B2;8;ABSTRACT
+Asphalt;Asphalte;B2;6;CONCRETE
+Aspirant;Aspirant;B2;4;CONCRETE
+Aspiration;Aspiration;B2;5;ABSTRACT
+Assassin;Assassin;B2;5;CONCRETE
+Assault;Assaut;B2;6;CONCRETE
+Assembly;Assemblée;B2;6;CONCRETE
+Assent;Acquiescement;C1;3;ABSTRACT
+Assertiveness;Affirmation de soi;C1;2;ABSTRACT
+Assessment;Évaluation;B2;7;ABSTRACT
+Asset;Atout;B2;6;CONCRETE
+an Assignment;une affectation;B2;7;CONCRETE
+an Assimilation;une assimilation;C1;3;ABSTRACT
+an Assistance;une assistance;B2;6;CONCRETE
+an Assistant;un assistant;B1;7;CONCRETE
+an Associate;un associé;B2;6;CONCRETE
+an Association;une association;A2;8;CONCRETE
+an Assumption;une hypothèse;B2;6;ABSTRACT
+an Assurance;une assurance;B2;7;CONCRETE
+an Asterisk;un astérisque;B2;3;CONCRETE
+an Astronaut;un astronaute;B1;4;CONCRETE
+Astronomy;Astronomie;B2;5;ABSTRACT
+Asylum;Asile;B2;4;CONCRETE
+Athlete;Athlète;A2;6;CONCRETE
+Athletics;Athlétisme;B2;4;CONCRETE
+Atmosphere;Atmosphère;B2;7;ABSTRACT
+Atom;Atome;B1;7;CONCRETE
+Atonement;Expiation;C1;2;ABSTRACT
+Atrium;Atrium;C1;1;CONCRETE
+Attachment;Attachement;B2;5;ABSTRACT
+Attack;Attaque;B1;8;CONCRETE
+an Attainment;une réalisation;C1;4;ABSTRACT
+an Attempt;une tentative;B2;7;ABSTRACT
+an Attendance;une présence;B2;6;ABSTRACT
+an Attendant;un préposé;B2;3;CONCRETE
+an Attention;une attention;A2;10;ABSTRACT
+an Attenuation;une atténuation;C1;2;ABSTRACT
+an Attic;un grenier;B1;4;CONCRETE
+an Attitude;une attitude;A2;10;ABSTRACT
+an Attorney;un avocat;B2;5;CONCRETE
+an Attraction;une attraction;A2;8;CONCRETE
+Attribute;Attribut;B2;6;ABSTRACT
+Aubergine;Aubergine;A2;5;CONCRETE
+Auction;Vente aux enchères;B2;5;ABSTRACT
+Audi;Audi;A2;4;CONCRETE
+Audience;Public;B2;8;ABSTRACT
+Audio;Audio;B1;6;CONCRETE
+Auditorium;Auditorium;B2;5;CONCRETE
+Augmentation;Augmentation;C1;4;ABSTRACT
+August;Août;A2;5;CONCRETE
+Aunt;Tante;A1;7;CONCRETE
+an Aurora;une aurore;B2;3;CONCRETE
+an Austerity;une austérité;C1;2;ABSTRACT
+an Australia;une Australie;A2;5;CONCRETE
+an Author;un auteur;B2;6;CONCRETE
+an Authority;une autorité;B2;7;ABSTRACT
+an Authorization;une autorisation;B2;5;ABSTRACT
+an Autobiography;une autobiographie;B2;4;CONCRETE
+an Autocracy;une autocratie;C1;2;ABSTRACT
+an Autograph;un autographe;B2;3;CONCRETE
+an Automaton;un automate;C1;2;CONCRETE
+Autonomy;Autonomie;C1;5;ABSTRACT
+Autopsy;Autopsie;B2;3;CONCRETE
+Autumn;Automne;A1;8;CONCRETE
+Availability;Disponibilité;B2;6;ABSTRACT
+Avalanche;Avalanche;B2;4;CONCRETE
+Avenue;Avenue;A2;9;CONCRETE
+Average;Moyenne;B1;7;ABSTRACT
+Aversion;Aversion;C1;2;ABSTRACT
+Aviation;Aviation;B2;5;ABSTRACT
+Avocado;Avocat;A2;6;CONCRETE
+an Award;une récompense;B2;7;CONCRETE
+an Awareness;une prise de conscience;B2;5;ABSTRACT
+an Awe;une crainte respectueuse;C1;3;ABSTRACT
+an Ax;une hache;A2;4;CONCRETE
+an Axe;une hache;A2;7;CONCRETE
+an Axiom;un axiome;C1;3;ABSTRACT
+an Axis;un axe;B2;6;CONCRETE
+an Azalea;une azalée;B2;2;CONCRETE
+an Azimuth;un azimut;C1;2;CONCRETE
+an Azure;un azur;C1;4;ABSTRACT

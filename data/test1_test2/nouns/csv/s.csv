@@ -1,0 +1,319 @@
+english;french;level;frequency;type
+a Saddle;une selle;B1;3;CONCRETE
+a Sail;une voile;A2;4;CONCRETE
+a Sailboat;un voilier;A2;2;CONCRETE
+a Sailor;un marin;A2;4;CONCRETE
+a Salad;une salade;A1;8;CONCRETE
+a Salmon;un saumon;A2;5;CONCRETE
+a Salt;du sel;A2;8;CONCRETE
+a Sand;du sable;A2;6;CONCRETE
+a Sandal;une sandale;A2;4;CONCRETE
+a Sandwich;un sandwich;A2;9;CONCRETE
+a Sardine;une sardine;A2;6;CONCRETE
+a Sari;un sari;B2;3;CONCRETE
+a Satellite;un satellite;B1;7;CONCRETE
+a Satin;un satin;B2;3;CONCRETE
+a Sausage;une saucisse;A2;7;CONCRETE
+a Savings;des économies;B2;5;ABSTRACT
+a Saxophone;un saxophone;B1;5;CONCRETE
+a Scale;une balance;B1;6;CONCRETE
+a Scarf;une écharpe;A2;8;CONCRETE
+a Scene;une scène;B1;8;CONCRETE
+a Scent;un parfum;B1;4;CONCRETE
+a School;une école;A1;10;CONCRETE
+a Science;une science;B2;7;ABSTRACT
+a Scissors;des ciseaux;A2;6;CONCRETE
+a Scooter;une trottinette;A2;3;CONCRETE
+a Score;un score;B2;5;ABSTRACT
+a Scorpion;un scorpion;B2;2;CONCRETE
+a Scratch;une égratignure;B2;4;CONCRETE
+a Screen;un écran;A2;9;CONCRETE
+a Screw;une vis;A2;8;CONCRETE
+a Sculpture;une sculpture;B2;5;CONCRETE
+a Sea;une mer;A2;10;CONCRETE
+a Seafood;un fruit de mer;B2;4;CONCRETE
+a Seagull;une mouette;A2;3;CONCRETE
+a Seal;un phoque;A2;4;CONCRETE
+a Seaplane;un hydravion;B2;2;CONCRETE
+a Search;une recherche;B1;6;ABSTRACT
+a Season;une saison;A1;9;ABSTRACT
+a Seat;un siège;A2;8;CONCRETE
+a Second;une seconde;A2;10;ABSTRACT
+a Secret;un secret;B2;6;ABSTRACT
+a Section;une section;A2;7;CONCRETE
+a Security;une sécurité;B2;6;ABSTRACT
+a Seed;une graine;A2;6;CONCRETE
+a Seesaw;un tape-cul;A1;2;CONCRETE
+a Segment;un segment;B2;5;CONCRETE
+a Selection;une sélection;B1;6;ABSTRACT
+a Self;soi-même;B2;5;ABSTRACT
+a Seller;un vendeur;A2;5;CONCRETE
+a Semester;un semestre;B1;7;CONCRETE
+a Seminar;un séminaire;B2;5;ABSTRACT
+a Senate;un sénat;B2;3;ABSTRACT
+a Senior;un aîné;B1;5;CONCRETE
+a Sense;un sens;A2;10;CONCRETE
+a Sensitivity;une sensibilité;C1;4;ABSTRACT
+a Sentence;une phrase;A1;10;CONCRETE
+a Sequins;des paillettes;B2;2;CONCRETE
+a Series;une série;A2;10;ABSTRACT
+a Serum;un sérum;B2;4;CONCRETE
+a Server;un serveur;A2;8;CONCRETE
+a Service;un Service;B2;8;CONCRETE
+a Session;une Session;B2;7;CONCRETE
+a Set;un Ensemble;B1;9;CONCRETE
+a Setting;un Cadre;B2;6;CONCRETE
+a Settlement;un Règlement;B2;5;CONCRETE
+a Seven;un Sept;A1;3;CONCRETE
+a Sewing;une Couture;B2;4;CONCRETE
+a Sex;un Sexe;B2;6;CONCRETE
+a Shade;une Ombre;B2;7;CONCRETE
+a Shadow;une Ombre;B2;8;CONCRETE
+a Shampoo;un shampooing;A2;7;CONCRETE
+a Shape;une forme;A2;8;CONCRETE
+a Share;une part;B2;6;ABSTRACT
+a Shark;un requin;A2;4;CONCRETE
+a Shawl;un châle;B2;3;CONCRETE
+a Sheep;un mouton;A1;6;CONCRETE
+a Sheet;un drap;A2;7;CONCRETE
+a Shelf;une étagère;A2;8;CONCRETE
+a Shell;un coquillage;A2;5;CONCRETE
+a Shelter;un abri;B2;6;CONCRETE
+a Shield;un bouclier;B1;4;CONCRETE
+a Shift;un changement;B2;5;ABSTRACT
+a Shin;un tibia;B2;2;CONCRETE
+a Ship;un navire;A2;7;CONCRETE
+a Shirt;une chemise;A1;9;CONCRETE
+a Shock;un choc;B2;6;ABSTRACT
+a Shoe;une chaussure;A1;10;CONCRETE
+a Shoot;un tir;B2;3;CONCRETE
+a Shop;un magasin;A1;10;CONCRETE
+a Shopping;des courses;A2;6;ABSTRACT
+Shorts;un short;A2;8;CONCRETE
+Shot;un coup;B2;6;CONCRETE
+Shoulder;une épaule;A2;8;CONCRETE
+Shovel;une pelle;B1;5;CONCRETE
+Show;un spectacle;B1;7;CONCRETE
+Shower;une douche;A2;8;CONCRETE
+Shrimp;une crevette;B2;3;CONCRETE
+Shrine;un sanctuaire;C1;2;CONCRETE
+Sibling;un frère ou une soeur;B2;3;CONCRETE
+Sickness;une maladie;B2;5;ABSTRACT
+a Side;un Côté;B1;6;CONCRETE
+a Sidewalk;un Trottoir;A2;5;CONCRETE
+a Sight;une Vue;B1;6;CONCRETE
+a Sign;un Signe;A2;7;CONCRETE
+a Signal;un Signal;B1;6;CONCRETE
+a Signature;une Signature;B2;5;CONCRETE
+a Silence;un Silence;B2;4;ABSTRACT
+a Silk;de la Soie;B2;3;CONCRETE
+a Silver;de l'Argent;A2;5;CONCRETE
+a Similarity;une Similarité;B2;4;ABSTRACT
+a Singer;un chanteur/chanteuse;B1;6;CONCRETE
+a Singing;un chant;B2;4;ABSTRACT
+a Single;un célibataire/un single;A2;7;CONCRETE
+a Sink;un évier;A2;6;CONCRETE
+a Sip;une gorgée;B2;3;CONCRETE
+a Sister;une sœur;A1;8;CONCRETE
+a Site;un site;B1;9;CONCRETE
+a Situation;une situation;A2;10;ABSTRACT
+a Size;une taille;A2;8;ABSTRACT
+a Skate;un patin à roulettes;B1;3;CONCRETE
+a Ski;des skis;A2;5;CONCRETE
+a Skill;une compétence;B2;6;ABSTRACT
+a Skin;une peau;B1;5;CONCRETE
+a Skirt;une jupe;A2;8;CONCRETE
+a Sky;un ciel;A1;10;CONCRETE
+a Skyline;une ligne d'horizon;C1;3;CONCRETE
+a Sled;une luge;B1;3;CONCRETE
+a Sleep;un sommeil;B1;7;ABSTRACT
+a Sleeve;une manche;B1;5;CONCRETE
+a Slice;une tranche;A2;8;CONCRETE
+a Slide;un toboggan;A2;5;CONCRETE
+a Slip;une glissade;B2;3;CONCRETE
+a Slope;une pente;B1;6;CONCRETE
+a Smell;une odeur;A2;8;CONCRETE
+a Smile;un sourire;A2;9;CONCRETE
+a Smoke;une fumée;B2;5;CONCRETE
+a Snack;une collation;A2;6;CONCRETE
+a Snake;un serpent;A2;5;CONCRETE
+a Sneakers;des baskets;A2;7;CONCRETE
+a Sneeze;un éternuement;B2;3;CONCRETE
+Snow;la neige;A1;5;CONCRETE
+Soap;le savon;A2;7;CONCRETE
+Soccer;le football;A2;8;CONCRETE
+Social;social/sociale;B1;7;ABSTRACT
+Society;la société;B2;8;ABSTRACT
+Sock;la chaussette;A1;6;CONCRETE
+Soda;le soda;B2;5;CONCRETE
+Sofa;le canapé;A2;8;CONCRETE
+Softball;le softball;B1;3;CONCRETE
+Software;le logiciel;B2;9;ABSTRACT
+a Soil;un sol;B1;5;CONCRETE
+a Soldier;un soldat;A2;7;CONCRETE
+a Sole;une sole;B2;3;CONCRETE
+a Solution;une solution;A2;9;ABSTRACT
+a Sombrero;un sombrero;C1;2;CONCRETE
+a Somebody;quelqu'un;A2;4;ABSTRACT
+a Someone;quelqu'un;A2;4;ABSTRACT
+a Something;quelque chose;A2;8;ABSTRACT
+a Son;un fils;A2;9;CONCRETE
+a Song;une chanson;A1;10;CONCRETE
+a Sort;un tri;B1;5;ABSTRACT
+a Sound;un son;A2;7;CONCRETE
+a Soup;une soupe;A2;6;CONCRETE
+a Source;une source;B2;5;CONCRETE
+a South;un sud;A2;7;ABSTRACT
+a Soy;un soja;B2;3;CONCRETE
+a Space;un espace;A2;9;ABSTRACT
+a Spaghetti;un spaghetti;A2;4;CONCRETE
+a Spain;une Espagne;A1;5;ABSTRACT
+a Span;une portée;B2;3;ABSTRACT
+a Sparrow;un moineau;A2;5;CONCRETE
+a Speaker;un orateur;B2;6;CONCRETE
+a Specialist;un spécialiste;B2;5;CONCRETE
+a Species;une espèce;B2;7;CONCRETE
+a Speech;un discours;B2;7;CONCRETE
+a Speed;une vitesse;A2;8;CONCRETE
+a Spell;un sort;B1;4;CONCRETE
+a Spelling;une orthographe;A2;6;CONCRETE
+a Spend;dépenser;A2;5;ABSTRACT
+a Sphere;une sphère;B2;5;CONCRETE
+a Spider;une araignée;B1;5;CONCRETE
+a Spike;un pic;B2;6;CONCRETE
+a Spinach;des épinards;A2;4;CONCRETE
+a Spine;une colonne vertébrale;B2;5;CONCRETE
+a Spirit;un esprit;B2;6;ABSTRACT
+a Spleen;une rate;C1;2;CONCRETE
+a Split;une fente;B2;5;CONCRETE
+a Sponge;une éponge;A2;6;CONCRETE
+a Spoon;une cuillère;A1;8;CONCRETE
+a Spoonful;une cuillerée;B2;4;CONCRETE
+Sport;Sport;B1;8;CONCRETE
+Spot;Tache;A2;5;CONCRETE
+Spray;Vaporisateur;B2;6;CONCRETE
+Spread;Étendue;B2;6;ABSTRACT
+Spring;Ressort;B1;7;CONCRETE
+Spy;Espion;B2;5;CONCRETE
+Square;Carré;A2;7;CONCRETE
+Squash;Courge;B2;4;CONCRETE
+Squid;Calmar;B2;3;CONCRETE
+Stability;Stabilité;B2;6;ABSTRACT
+a Stadium;un stade;B2;7;CONCRETE
+a Staff;un personnel;B2;6;CONCRETE
+a Stage;une scène;B1;7;CONCRETE
+a Stain;une tache;B2;6;CONCRETE
+a Staircase;un escalier;A2;5;CONCRETE
+a Stake;un enjeu;C1;4;ABSTRACT
+a Stall;un étal;B2;5;CONCRETE
+a Stamp;un timbre;A2;6;CONCRETE
+a Stand;un stand;B2;6;CONCRETE
+a Standard;une norme;B2;7;ABSTRACT
+a Star;une étoile;B1;8;CONCRETE
+a Starfish;une étoile de mer;B2;4;CONCRETE
+a Start;un début;A2;6;ABSTRACT
+a State;un état;B2;8;CONCRETE
+a Statement;une déclaration;B2;7;ABSTRACT
+a Station;une station;A2;9;CONCRETE
+a Statistic;une statistique;B2;6;CONCRETE
+a Status;un statut;B2;7;ABSTRACT
+a Stay;un séjour;A2;7;ABSTRACT
+a Steak;un steak;A2;8;CONCRETE
+Steam;Vapeur;B2;6;CONCRETE
+Steel;Acier;B2;7;CONCRETE
+Steeple;Clocher;B2;3;CONCRETE
+Stem;Tige;B2;5;CONCRETE
+Step;Marche;A2;8;CONCRETE
+Stereo;Stéréo;B1;5;CONCRETE
+Stethoscope;Stéthoscope;B2;2;CONCRETE
+Stew;Ragoût;B2;4;CONCRETE
+Stick;Bâton;A2;8;CONCRETE
+Stiletto;Stilet;C1;2;CONCRETE
+a Still;une distillerie;B2;3;CONCRETE
+a Stinger;un dard;C1;1;CONCRETE
+a Stitch;un point de suture;B2;5;CONCRETE
+a Stock;un stock;B1;8;CONCRETE
+a Stomach;un estomac;A2;9;CONCRETE
+a Stone;une pierre;A1;10;CONCRETE
+a Stool;un tabouret;A2;7;CONCRETE
+a Stop;un arrêt;A2;10;CONCRETE
+a Storage;un stockage;B2;5;ABSTRACT
+a Store;un magasin;A1;10;CONCRETE
+a Storm;une tempête;B2;6;CONCRETE
+a Story;une histoire;A2;10;ABSTRACT
+a Stove;un poêle;A2;5;CONCRETE
+a Stranger;un étranger;A2;6;CONCRETE
+a Strategy;une stratégie;B2;7;ABSTRACT
+a Straw;une paille;A2;5;CONCRETE
+a Stream;un ruisseau;B2;4;CONCRETE
+a Street;une rue;A1;10;CONCRETE
+a Strength;une force;B1;7;ABSTRACT
+a Stress;un stress;B2;8;ABSTRACT
+a Stretch;un étirement;B1;4;CONCRETE
+a String;une corde;A2;6;CONCRETE
+a Strip;une bande;B2;5;CONCRETE
+a Stroke;une caresse/un AVC;B2;5;CONCRETE
+a Structure;une structure;B2;7;ABSTRACT
+a Struggle;une lutte;B2;6;ABSTRACT
+a Student;un étudiant;A1;10;CONCRETE
+a Studio;un studio;B1;8;CONCRETE
+a Study;une étude;B1;8;ABSTRACT
+a Stuff;des trucs;B2;4;CONCRETE
+a Stump;une souche;B1;4;CONCRETE
+a Style;un style;B2;6;ABSTRACT
+a Subject;un sujet;A2;9;ABSTRACT
+a Submarine;un sous-marin;B2;3;CONCRETE
+a Substance;une substance;B2;6;ABSTRACT
+a Suburb;une banlieue;B1;5;CONCRETE
+a Success;un succès;B1;7;ABSTRACT
+a Suck;une aspiration;C1;2;ABSTRACT
+a Suede;un daim;B2;2;CONCRETE
+a Sugar;un sucre;A2;10;CONCRETE
+a Suit;un costume;B2;8;CONCRETE
+a Sultan;un sultan;B2;4;CONCRETE
+a Summer;un été;A2;9;CONCRETE
+a Sun;un soleil;A1;9;CONCRETE
+a Sunburn;un coup de soleil;B1;4;CONCRETE
+a Sunday;un dimanche;A1;10;CONCRETE
+a Sundial;un cadran solaire;C1;2;CONCRETE
+a Sunflower;un tournesol;A2;5;CONCRETE
+a Sunglasses;des lunettes de soleil;A2;7;CONCRETE
+a Sunrise;un lever de soleil;B1;6;CONCRETE
+a Sunset;un coucher de soleil;B1;5;CONCRETE
+a Sunshine;un rayon de soleil;A2;3;CONCRETE
+a Supermarket;un supermarché;A2;8;CONCRETE
+a Supper;un souper;A2;4;CONCRETE
+a Supply;une fourniture;B2;6;ABSTRACT
+a Support;un soutien;B2;7;ABSTRACT
+a Supreme;suprême;C1;3;ABSTRACT
+a Surface;une surface;A2;8;CONCRETE
+a Surfboard;une planche de surf;B1;2;CONCRETE
+a Surgeon;un chirurgien;C1;4;CONCRETE
+a Surgery;une chirurgie;B2;6;CONCRETE
+a Surname;un nom de famille;A2;4;CONCRETE
+a Surprise;une surprise;A2;8;ABSTRACT
+a Surround;un environnement;B2;3;CONCRETE
+a Survey;une enquête;B2;5;CONCRETE
+a Survival;une survie;B2;4;ABSTRACT
+a Sushi;un sushi;A2;3;CONCRETE
+a Swallow;une hirondelle;B1;3;CONCRETE
+a Swamp;un marais;B2;3;CONCRETE
+a Swan;un cygne;A2;3;CONCRETE
+a Sweater;un pull-over;B1;8;CONCRETE
+a Sweatshirt;un sweat-shirt;B1;7;CONCRETE
+a Sweatshop;un atelier clandestin;C1;2;CONCRETE
+a Sweatsuit;un survêtement;B2;5;CONCRETE
+a Sweets;des sucreries;A2;4;CONCRETE
+a Swim;une nage;A2;3;ABSTRACT
+a Swimming;la natation;A2;6;ABSTRACT
+a Swimsuit;un maillot de bain;A2;9;CONCRETE
+a Swing;une balançoire;A2;4;CONCRETE
+a Switch;un interrupteur;B1;8;CONCRETE
+a Sword;une épée;B2;5;CONCRETE
+a Symbol;un symbole;B2;8;ABSTRACT
+a Symmetry;une symétrie;B2;4;ABSTRACT
+a Sympathy;une sympathie;B2;4;ABSTRACT
+a Symptom;un symptôme;B2;7;CONCRETE
+a Syndrome;un syndrome;B2;6;ABSTRACT
+a Synonym;un synonyme;B2;6;ABSTRACT
+a System;un système;B1;10;CONCRETE

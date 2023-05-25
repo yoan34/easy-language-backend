@@ -1,0 +1,64 @@
+english;french;level;frequency;type
+a Hail;une averse de grêle;B1;3;CONCRETE
+a Hair;un cheveu;A1;8;CONCRETE
+a Halter;un licou;B2;2;CONCRETE
+a Hamburger;un hamburger;A2;9;CONCRETE
+a Hammer;un marteau;A2;8;CONCRETE
+a Hammock;un hamac;B2;3;CONCRETE
+a Hand;une main;A1;10;CONCRETE
+a Hanger;un cintre;A2;7;CONCRETE
+a Harbor;un port;B2;5;CONCRETE
+a Harp;une harpe;B2;3;CONCRETE
+a Hat;un chapeau;A2;7;CONCRETE
+a Hatch;un hayon;B2;4;CONCRETE
+a Hawk;un faucon;B2;3;CONCRETE
+a Head;une tête;A1;10;CONCRETE
+a Heart;un cœur;A2;10;CONCRETE
+a Hearth;un foyer;B2;3;CONCRETE
+a Hedge;une haie;B1;5;CONCRETE
+a Hedgehog;un hérisson;A2;4;CONCRETE
+a Hem;un ourlet;C1;2;CONCRETE
+a Hemp;du chanvre;C1;2;ABSTRACT
+a Hen;une poule;A2;8;CONCRETE
+a Herald;un héraut;B2;3;CONCRETE
+a Herb;une herbe;A2;7;CONCRETE
+a Heron;un héron;B2;4;CONCRETE
+a Hexagon;un hexagone;B1;3;CONCRETE
+a Hill;une colline;A2;6;CONCRETE
+a Hive;une ruche;B2;4;CONCRETE
+a Hoax;un canular;C1;3;ABSTRACT
+a Hockey;un hockey;A2;5;CONCRETE
+a Hog;un porc;B2;4;CONCRETE
+a Hold;une prise;B2;3;CONCRETE
+a Hole;un trou;A2;8;CONCRETE
+a Holiday;un congé;A2;6;ABSTRACT
+a Home;un foyer;A2;9;CONCRETE
+a Honey;du miel;A2;5;CONCRETE
+a Honeycomb;un rayon de miel;B2;2;CONCRETE
+a Hood;une capuche;B1;4;CONCRETE
+a Hoodie;un sweat à capuche;B1;5;CONCRETE
+a Hook;un crochet;B1;6;CONCRETE
+a Hope;un espoir;B1;8;ABSTRACT
+a Horizon;un horizon;B2;6;CONCRETE
+a Horn;une corne;B2;4;CONCRETE
+a Horse;un cheval;A1;7;CONCRETE
+a Hose;un tuyau;B1;5;CONCRETE
+a Hosepipe;un tuyau d'arrosage;B2;2;CONCRETE
+a Hospital;un hôpital;A2;10;CONCRETE
+a Host;un hôte;B2;4;CONCRETE
+a Hotel;un hôtel;A2;10;CONCRETE
+a Hour;une heure;A1;10;ABSTRACT
+a House;une maison;A1;10;CONCRETE
+a Houseboat;une péniche;B1;3;CONCRETE
+a Humidity;une humidité;B2;5;ABSTRACT
+a Humor;un humour;B2;5;ABSTRACT
+a Hunger;une faim;B1;4;ABSTRACT
+a Hunter;un chasseur;B1;3;CONCRETE
+a Hurdle;un obstacle;C1;2;CONCRETE
+a Hurricane;un ouragan;B2;4;CONCRETE
+a Hut;une cabane;A2;3;CONCRETE
+a Hydrant;une borne-fontaine;B2;4;CONCRETE
+a Hygiene;l'hygiène;B2;6;ABSTRACT
+a Hype;un battage médiatique;B2;6;ABSTRACT
+a Hypnosis;une hypnose;B2;4;ABSTRACT
+a Hypothesis;une hypothèse;B2;7;ABSTRACT

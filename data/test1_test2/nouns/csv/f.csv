@@ -1,0 +1,102 @@
+english;french;level;frequency;type
+a Fable;une fable;B2;4;ABSTRACT
+a Falcon;un faucon;B2;3;CONCRETE
+a Fan;un ventilateur;A2;6;CONCRETE
+a Fang;un croc;B2;2;CONCRETE
+a Feather;une plume;A2;5;CONCRETE
+a Fence;une clôture;A2;6;CONCRETE
+a Ferry;un ferry;B1;4;CONCRETE
+a Fiddle;un violon;B2;2;CONCRETE
+a Fiesta;une fête;B1;3;ABSTRACT
+a Filing;un classement;B2;2;ABSTRACT
+a Finger;un doigt;A2;8;CONCRETE
+a Fire;un feu;A1;10;CONCRETE
+a Fish;un poisson;A1;10;CONCRETE
+a Fishing;la pêche;B2;4;ABSTRACT
+a Fist;un poing;B1;6;CONCRETE
+a Flamingo;un flamant;B2;3;CONCRETE
+a Flannel;une flanelle;C1;2;CONCRETE
+a Flap;un rabat;C2;1;CONCRETE
+a Flashlight;une lampe de poche;B1;5;CONCRETE
+a Flat;un appartement;A2;7;CONCRETE
+a Flavor;une saveur;B2;5;ABSTRACT
+a Flax;un lin;B2;3;CONCRETE
+a Flee;fuir;C1;1;ABSTRACT
+a Fleece;une toison;B2;4;CONCRETE
+a Flicker;un scintillement;C2;2;ABSTRACT
+a Flint;une silex;B2;3;CONCRETE
+a Flip-flops;des tongs;A2;6;CONCRETE
+a Float;un flotteur;B2;4;CONCRETE
+a Flock;un troupeau;B1;5;CONCRETE
+a Flood;une inondation;B2;7;ABSTRACT
+a Floor;un sol;A2;8;CONCRETE
+a Floss;un fil dentaire;B2;2;CONCRETE
+a Flour;de la farine;A2;7;CONCRETE
+a Flower;une fleur;A1;9;CONCRETE
+a Flowerpot;un pot de fleurs;B1;4;CONCRETE
+a Flu;la grippe;B2;4;ABSTRACT
+a Flute;une flûte;A2;6;CONCRETE
+a Fly;une mouche;A2;8;CONCRETE
+a Foam;une mousse;B2;5;CONCRETE
+a Fog;un brouillard;B1;6;CONCRETE
+a Foghorn;un avertisseur sonore de brouillard;B2;4;CONCRETE
+a Foil;une feuille d'aluminium;B2;5;CONCRETE
+a Folder;un dossier;B1;6;CONCRETE
+a Folly;une folie;C1;3;ABSTRACT
+a Fondue;une fondue;B2;4;CONCRETE
+a Food;de la nourriture;A1;10;CONCRETE
+a Foot;un pied;A1;8;CONCRETE
+a Football;un ballon de football;A2;9;CONCRETE
+a Footstool;un repose-pieds;B2;2;CONCRETE
+a Forage;un fourrage;C2;1;CONCRETE
+a Force;une Force;B2;7;ABSTRACT
+a Forecast;une Prévision;B2;5;ABSTRACT
+a Forehead;un Front;A2;4;CONCRETE
+a Forest;une Forêt;A2;8;CONCRETE
+a Fork;une Fourchette;A1;9;CONCRETE
+a Forklift;un Chariot élévateur;B2;3;CONCRETE
+a Form;une Forme;A2;8;ABSTRACT
+a Fort;un Fort;B2;4;CONCRETE
+a Fortune;une Fortune;B2;5;ABSTRACT
+a Forum;un Forum;B2;6;ABSTRACT
+a Fossil;un fossile;B2;4;CONCRETE
+a Foster;un tuteur;B2;2;CONCRETE
+a Foundation;une fondation;B2;7;ABSTRACT
+a Fountain;une fontaine;A2;6;CONCRETE
+a Fox;un renard;A2;5;CONCRETE
+a Frame;un cadre;B1;8;CONCRETE
+a Freckle;une tache de rousseur;B2;2;CONCRETE
+a Freeze;un gel;B2;4;CONCRETE
+a Freight;un fret;B2;5;CONCRETE
+a French;un français;A1;10;CONCRETE
+a Frenzy;une frénésie;C1;5;ABSTRACT
+a Frequency;une fréquence;B2;7;ABSTRACT
+a Fresco;une fresque;B2;3;CONCRETE
+a Fridge;un réfrigérateur;A2;9;CONCRETE
+a Friend;un ami;A1;10;CONCRETE
+a Fringe;une frange;C1;4;CONCRETE
+a Fritter;un beignet;B2;2;CONCRETE
+a Frog;une grenouille;A2;6;CONCRETE
+a Front;un front;B2;8;CONCRETE
+a Frost;un gel;B2;5;CONCRETE
+a Frostbite;un engelure;B2;2;CONCRETE
+a Frosting;un glaçage;B2;3;CONCRETE
+a Frown;un froncement de sourcils;B2;4;ABSTRACT
+a Fruit;un fruit;A1;10;CONCRETE
+a Fruitcake;un gâteau aux fruits;B2;2;CONCRETE
+a Fudge;un caramel mou;B2;2;CONCRETE
+a Fuel;un carburant;B1;8;CONCRETE
+a Fun;du plaisir;A2;8;ABSTRACT
+a Fund;un fonds;B2;6;ABSTRACT
+a Funeral;un enterrement;B2;6;CONCRETE
+a Fungus;un champignon;B2;4;CONCRETE
+a Fur;une fourrure;B2;4;CONCRETE
+a Furnace;un four;B2;5;CONCRETE
+a Furniture;un meuble;A2;7;CONCRETE
+a Furrow;un sillon;C1;2;CONCRETE
+a Fury;une fureur;C1;3;ABSTRACT
+a Fuse;un fusible;B2;5;CONCRETE
+a Fuss;une agitation;C1;3;ABSTRACT
+a Futon;un futon;A2;3;CONCRETE
+a Future;un avenir;A2;10;ABSTRACT
+a Fuzz;un duvet;A1;3;CONCRETE

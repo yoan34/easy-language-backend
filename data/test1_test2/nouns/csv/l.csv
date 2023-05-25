@@ -1,0 +1,71 @@
+english;french;level;frequency;type
+a Ladle;une louche;A2;5;CONCRETE
+a Lagoon;un lagon;B2;3;CONCRETE
+a Lamb;un agneau;A2;4;CONCRETE
+a Lamp;une lampe;A2;8;CONCRETE
+a Laptop;un ordinateur portable;B1;9;CONCRETE
+a Laser;un laser;B2;4;CONCRETE
+a Lattice;un treillis;C1;2;CONCRETE
+a Lawn;une pelouse;B2;5;CONCRETE
+a Leather;un cuir;B2;5;CONCRETE
+a Lecture;une conférence;B2;7;ABSTRACT
+a Ledge;un rebord;B2;5;CONCRETE
+a Leggings;un legging;A1;4;CONCRETE
+a Legume;un légume;A2;7;CONCRETE
+a Lemon;un citron;A2;8;CONCRETE
+a Lemonade;une limonade;A2;4;CONCRETE
+a Lens;une lentille;B2;6;CONCRETE
+a Leopard;un léopard;B2;3;CONCRETE
+a Leotard;un justaucorps;B1;2;CONCRETE
+a Lettuce;une laitue;A2;7;CONCRETE
+a Levee;une levée;C1;4;CONCRETE
+a Lever;un Levier;B1;5;CONCRETE
+a Library;une Bibliothèque;A2;8;CONCRETE
+a Lichen;un Lichen;B2;2;CONCRETE
+a Lid;un Couvercle;A2;6;CONCRETE
+a Lifeboat;un Canot de sauvetage;B2;3;CONCRETE
+a Lifeguard;un Sauveteur;A2;5;CONCRETE
+a Lighthouse;un Phare;B1;4;CONCRETE
+a Lightning;un Éclair;B2;4;CONCRETE
+a Lilac;un Lilas;B2;3;CONCRETE
+a Lily;un Lys;B2;4;CONCRETE
+a Limousine;une limousine;B1;6;CONCRETE
+a Linen;un linge;B2;4;CONCRETE
+a Lingerie;de la lingerie;B2;4;CONCRETE
+a Link;un lien;B2;6;ABSTRACT
+a Lion;un lion;A2;7;CONCRETE
+a Lioness;une lionne;A2;5;CONCRETE
+a Lip;une lèvre;A2;6;CONCRETE
+a Lipstick;un rouge à lèvres;A2;6;CONCRETE
+a Liquor;un alcool;B2;4;CONCRETE
+a List;une liste;A2;8;ABSTRACT
+a Literature;une littérature;C1;7;ABSTRACT
+a Litter;une litière;B2;4;CONCRETE
+a Liver;un foie;B2;6;CONCRETE
+a Lizard;un lézard;A2;3;CONCRETE
+a Llama;un lama;A2;4;CONCRETE
+a Loaf;un pain;A2;5;CONCRETE
+a Loan;un prêt;B2;6;ABSTRACT
+a Lobster;un homard;B2;4;CONCRETE
+a Locomotive;une locomotive;B1;5;CONCRETE
+a Loincloth;un pagne;B2;3;CONCRETE
+a Lollipop;une sucette;A2;6;CONCRETE
+a Longitude;une longitude;B2;4;ABSTRACT
+a Lookout;un poste d'observation;B2;3;CONCRETE
+a Loom;un métier à tisser;B2;3;CONCRETE
+a Loop;une boucle;B1;5;CONCRETE
+a Lorry;un camion;A2;6;CONCRETE
+a Lotion;une lotion;B2;4;CONCRETE
+a Lottery;une loterie;B2;5;ABSTRACT
+a Lounge;un salon;B2;5;CONCRETE
+a Love;un amour;A2;10;ABSTRACT
+Luggage;Bagage;B2;7;CONCRETE
+Lumber;Bois de charpente;B2;5;CONCRETE
+Lunch;Déjeuner;A2;8;CONCRETE
+Lunchbox;Boîte à lunch;A2;4;CONCRETE
+Lung;Poumon;B2;8;CONCRETE
+Lute;Luth;B2;3;CONCRETE
+Luxury;Luxueux;B2;6;ABSTRACT
+Lychee;Litchi;B2;3;CONCRETE
+Lynx;Lynx;B2;3;CONCRETE
+Lysosome;Lysosome;B2;2;CONCRETE
