@@ -6,7 +6,7 @@ import ast
 from typing import List
 from dotenv import load_dotenv
 
-from prompt import QUESTION_FOR_LIST_FORMAT, CONTEXT_FOR_LIST_FORMAT
+from constants import QUESTION_FOR_LIST_FORMAT, CONTEXT_FOR_LIST_FORMAT, HEADERS_CSV
 
 # https://universaldependencies.org/u/dep/
 load_dotenv()
@@ -240,7 +240,7 @@ def get_more_info_for_context(folder: str):
 
 
 def manage_incorrect_answer(question: str, context: str, logfile: any):
-    flag, tries = True, 0
+    flag, tries, answer = True, 0, ''
     while flag:
         try:
             if tries:
@@ -278,20 +278,23 @@ def create_csv(folder: str, filename: str, base_path:str, logfile: any):
 
     with open(f"{base_path}/csv/{letter}.csv", "w", newline='') as f:
         writer = csv.writer(f, delimiter=';')
-        writer.writerow(['english', 'french', 'level', 'frequency'])
+        writer.writerow(HEADERS_CSV[folder])
         writer.writerows(new_content)
         print_all(f"File {base_path}/csv/{letter}.csv write successfully!", logfile)
 
 def create_all_csv(native, to_learn):
     logfile = open('test_format_csv.txt', 'w')
     folders = os.listdir(f"data/{native}_{to_learn}")
-    for folder in ['nouns']:
+    for folder in folders:
         base_path = f"data/{native}_{to_learn}/{folder}"
         files = os.listdir(f"{base_path}/list")
         if not os.path.exists(f"{base_path}/csv"):
             os.mkdir(f"{base_path}/csv")
             
         for file in files:
+            if os.path.exists(f"{base_path}/csv/{file.split('.')[0][-1]}.csv"):
+                print(f"file: {base_path}/csv/{file.split('.')[0][-1]}.csv already exist.")
+                continue
             create_csv(folder, file, base_path, logfile) 
     logfile.close()
 

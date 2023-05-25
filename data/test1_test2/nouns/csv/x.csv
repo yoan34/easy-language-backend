@@ -1,0 +1,35 @@
+english;french;level;frequency
+a X-ray;une radiographie;B1;8;CONCRETE
+a Xenarthra;un xenarthre;UNKNOWN;1;CONCRETE
+a Xenobiotic;un xénobiotique;UNKNOWN;2;ABSTRACT
+a Xenoblast;un xénoblaste;UNKNOWN;1;CONCRETE
+a Xenodiagnosis;un xénodiagnostic;UNKNOWN;1;CONCRETE
+a Xenodiagnostic;un xénodiagnostic;UNKNOWN;1;CONCRETE
+a Xenodochial;xénophile;UNKNOWN;1;ABSTRACT
+a Xenogamy;une xénogamie;UNKNOWN;2;ABSTRACT
+a Xenogenesis;une xénogenèse;UNKNOWN;1;ABSTRACT
+a Xenoglossia;une xénoglossie;UNKNOWN;1;ABSTRACT
+a Xenograft;un xénogreffe;C2;3;CONCRETE
+a Xenolith;un xénolithe;C2;2;CONCRETE
+a Xenolithological;xénolithologique;C2;1;ABSTRACT
+a Xenolithology;xénolithologie;C2;1;ABSTRACT
+a Xenoliths;des xénolithes;C2;1;CONCRETE
+a Xenomania;la xénomanie;C2;1;ABSTRACT
+a Xenomorph;un xénomorphe;C2;2;CONCRETE
+a Xenomorphically;xénomorphiquement;C2;1;ABSTRACT
+a Xenomorphs;des xénomorphes;C2;2;CONCRETE
+a Xenon;un xénon;B2;8;CONCRETE
+a Xenoparasite;un xénoparasite;C2;2;CONCRETE
+a Xenophile;un xénophile;C2;3;CONCRETE
+a Xenophobe;un xénophobe;C2;4;CONCRETE
+a Xenophobes;des xénophobes;C2;2;CONCRETE
+a Xenophobia;la xénophobie;B2;5;ABSTRACT
+a Xenophthalmia;une xénothalmie;C2;1;CONCRETE
+a Xenopsychology;la xénopsychologie;C2;1;ABSTRACT
+a Xenotime;un xénotime;C2;1;CONCRETE
+a Xenotransplantation;une xénotransplantation;C2;3;CONCRETE
+a Xenurine;un xénurine;C2;1;CONCRETE
+a Xerography;une Xérographie;C2;2;ABSTRACT
+a Xerophyte;une Xérophyte;C1;1;CONCRETE
+a Xylography;une Xylographie;C2;2;ABSTRACT
+a Xylophone;un Xylophone;A2;5;CONCRETE

@@ -7,3 +7,10 @@ I'm giving you a list of {} and guidelines, you have to create a list of list. F
 - fourth element, the frequency of the word scored ranging from 1 for rarely used to 10 for very commonly used.
 {}
 return only the list of the lists in python format. Use double quote for elements of list."""
+
+HEADERS_CSV = {
+    'verbs': ['english', 'french', 'level', 'frequency', 'type', 'info'],
+    'adverbs': ['english', 'french', 'level', 'frequency', 'type'],
+    'nouns': ['english', 'french', 'level', 'frequency', 'type'],
+    'adjectives': ['english', 'french', 'level', 'frequency'],
+}
