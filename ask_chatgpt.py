@@ -13,16 +13,19 @@ load_dotenv()
 
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
-N_VERBS_ADJ_BY_REQUEST = 5
-N_NOUNS_BY_REQUEST = 10
-N_ADVERBS_BY_REQUEST = 2
+# N_VERBS_ADJ_BY_REQUEST = 50
+# N_NOUNS_BY_REQUEST = 100
+# N_ADVERBS_BY_REQUEST = 20
+N_VERBS_ADJ_BY_REQUEST = 15
+N_NOUNS_BY_REQUEST = 15
+N_ADVERBS_BY_REQUEST = 15
 all_tokens = {'verbs': 0, 'adverbs': 0, 'nouns': 0, 'adjectives': 0}
 all_words = {'verbs': 0, 'adverbs': 0, 'nouns': 0, 'adjectives': 0}
 
-def retry_api_call(max_attempts=5, delay=1):
+def retry_api_call(max_attempts=10, delay=1):
     def decorator(api_call_func):
         def wrapper(*args, **kwargs):
-            log_file = args[2]
+            logfile = args[3]
             attempts = 0
             success = False
 
@@ -31,22 +34,22 @@ def retry_api_call(max_attempts=5, delay=1):
                     response = api_call_func(*args, **kwargs)
                     success = True  # L'appel API a réussi, sortir de la boucle while
                 except Exception as e:
-                    print_all(f"Error when call API: {e}", log_file)
+                    print_all(f"[ERROR_API] Error when call API: {e}", logfile)
                     attempts += 1
                     time.sleep(delay)
 
             if not success:
-                print_all(f"Échec de l'appel API après {max_attempts} tentatives.", log_file)
+                print_all(f"[FATAL_ERROR] Échec de l'appel API après {max_attempts} tentatives.", logfile)
             return response
         return wrapper
     return decorator
 
 
-@retry_api_call(max_attempts=5, delay=2)
-def answer_to_the_sentence(question: str, context: str, type_word: str, log_file: TextIO, temperature=0.2):
+@retry_api_call(max_attempts=10, delay=2)
+def answer_to_the_sentence(question: str, context: str, type_word: str, logfile: TextIO, temperature=0.2):
     global all_tokens
-    print_all(f"[CONTEXT] {context}", log_file)
-    print_all(f"[QUESTION] {question}", log_file)
+    print_all(f"{' '*8}[API_CONTEXT] {context}", logfile)
+    print_all(f"{' '*8}[API_QUESTION] {question}", logfile)
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
@@ -56,7 +59,9 @@ def answer_to_the_sentence(question: str, context: str, type_word: str, log_file
         temperature=temperature,
     )
     answer = completion.choices[0].message.content
-    print_all(f"[TOKENS] {completion.usage['completion_tokens']}", log_file)
+    answer_to_show = answer.split('\n')
+    print_all(f"{' '*8}[API_ANSWER] {answer_to_show}", logfile)
+    print_all(f"{' '*8}[API_TOKENS] {completion.usage['completion_tokens']}", logfile)
     all_tokens[type_word] += completion.usage['completion_tokens']
     return answer
 
@@ -72,7 +77,7 @@ def add_article_or_to_before_word(words: List[str], letter: str, folder: str):
     return words
 
 
-def remove_numeration_and_bad_word(path: str, letter: str):
+def remove_numeration_and_bad_word(language: str, path: str, letter: str):
     content = []
     new_content = []
     with open(path, 'r') as file:
@@ -86,6 +91,7 @@ def remove_numeration_and_bad_word(path: str, letter: str):
             continue
         if 'Sorry,' in line:
             continue
+        # CREER CONDITION POUR LES NOUN QUI SONT PAS INTEGRER CAR "a cat", "a" == "c"
         if line.startswith(letter) or line.startswith(letter.capitalize()):
             line_formatted = f"{line.replace('.', '').strip()}\n"
             new_content.append(line_formatted)
@@ -143,7 +149,7 @@ def check_and_update_all_list_of_word(native:str , to_learn: str, logfile: TextI
         for file in files:
             path = f"data/{native}_{to_learn}/{folder}/list/{file}"
             letter = file.split('.')[0][-1]
-            remove_numeration_and_bad_word(path, letter)
+            remove_numeration_and_bad_word(to_learn, path, letter)
             remove_duplicate_word(path)
             remove_compose_word(path)
             if folder == 'verbs':
@@ -155,37 +161,37 @@ def check_and_update_all_list_of_word(native:str , to_learn: str, logfile: TextI
             path = f"data/{native}_{to_learn}/{folder}/list/{file}"
             with open(path, 'r') as f:
                 all_words[folder] += len(f.readlines())
-    print_all(f"words per type: {all_words}", logfile)
-    print_all(f"total words: {sum([all_words[key] for key in all_words])}", logfile)
 
 
 def create_all_list_of_word(native: str, to_learn: str, logfile: TextIO):
+    global all_words
     type_of_words = ['verbs', 'nouns', 'adjectives', 'adverbs']
     
     for type_word in type_of_words:
         path = f'data/{native}_{to_learn}/{type_word}'
         os.makedirs(path)
-        print_all(f"[CREATE_FOLDER]: {path}", logfile)
+        print_all(f"{' '*4}[CREATE_FOLDER]: {path}", logfile)
             
-        for letter_code in range(ord('a'), ord('z')+1):
+        for letter_code in range(ord('a'), ord('c')+1):
             letter = chr(letter_code)
             file_path = f"{path}/list/start_by_{letter}.txt"
             if os.path.exists(file_path):
-                print_all(f"[ALREADY_EXIST] {file_path}", logfile)
+                print_all(f"{' '*4}[ALREADY_EXIST] {file_path}", logfile)
                 continue
-            words = create_list_of_word(type_word, letter, file_path, to_learn, logfile)
-            print_all(f"[CREATE_FILE] list/start_by_{letter}.csv sucessfully", logfile)
+            all_words[type_word] += create_list_of_word(type_word, letter, file_path, to_learn, logfile)
+            print_all(f"{' '*4}[CREATE_FILE] {type_word}list/start_by_{letter}.txt sucessfully", logfile)
+            print_all(' '*4 + "-"*80, logfile)
 
 
-def create_list_of_word(type_word: str, letter: str, file_path: str, language: str, log_file: TextIO):
+def create_list_of_word(type_word: str, letter: str, file_path: str, language: str, logfile: TextIO):
     info = "always in infinitive form" if type_word == "verbs" else ""
     number = N_VERBS_ADJ_BY_REQUEST if type_word in ['verbs', 'adjectives'] else N_NOUNS_BY_REQUEST if type_word == 'nouns' else N_ADVERBS_BY_REQUEST
     context = f"""Do not comment, just write one word per line without numbered it.
-    Create a list containing a minimum of {number} {language} {type_word} {info}, if possible, otherwise include as many as possible."""
+    Create a python list containing a minimum of {number} {language} {type_word} {info}, if possible, otherwise include as many as possible. Never comments, juste write {type_word}"""
     if type_word == 'nouns':
         context += "don't forget to put the appropriate article before the noun."
-    question = f"Write {type_word}s that start by the letter '{letter}'."
-    response = answer_to_the_sentence(question, context, type_word, log_file)
+    question = f"Write {type_word} that start by the letter '{letter}'."
+    response = answer_to_the_sentence(question, context, type_word, logfile)
     
     directory = os.path.dirname(file_path)
     if not os.path.exists(directory):
@@ -205,16 +211,16 @@ def manage_incorrect_answer(question: str, context: str, type_word: str, logfile
     while flag:
         try:
             if tries:
-                print_all(f'TRIES: {tries}', logfile)
+                print_all(f"{' ' * 8}TRIES: {tries}", logfile)
                 question = f"You answer is not correct, please use double quote.{question}"
             answer = answer_to_the_sentence(question, context, type_word, logfile, temperature=0.1)
             answer = ast.literal_eval(answer[answer.find('['):answer.rfind(']') + 1] )
             flag = False
-            print_all(f"GOOD: {answer}", logfile)
+            print_all(f"{' ' * 8}[GOOD_LITERAL_EVAL]", logfile)
         except Exception as e:
             tries += 1
-            print_all(f'Error occur: {e}', logfile)
-            print_all(answer, logfile)
+            print_all(f"{' ' * 8}[ERROR_LITERAL_EVAL]: {e}", logfile)
+            print_all(f"{' ' * 8}[ERROR_LITERAL_EVAL_ANSWER]: {answer}", logfile)
             time.sleep(1)
     return answer
     
@@ -238,7 +244,7 @@ def create_csv(native: str, to_learn: str, folder: str, filename: str, base_path
         writer = csv.writer(f, delimiter=';')
         writer.writerow(HEADERS_CSV(native, to_learn)[folder])
         writer.writerows(new_content)
-        print_all(f"[ALREADY_EXIST] File {base_path}/csv/{letter}.csv", logfile)
+        print_all(f"{' '*2}[CREATE_CSV] File {base_path}/csv/{letter}.csv", logfile)
 
 
 def create_all_csv(native: str, to_learn: str, logfile: TextIO):
@@ -251,7 +257,7 @@ def create_all_csv(native: str, to_learn: str, logfile: TextIO):
             
         for file in files:
             if os.path.exists(f"{base_path}/csv/{file.split('.')[0][-1]}.csv"):
-                print_all(f"[ALREADY_EXIST] {base_path}/csv/{file.split('.')[0][-1]}.csv.", logfile)
+                print_all(f"{' '*4}[ALREADY_EXIST] {base_path}/csv/{file.split('.')[0][-1]}.csv.", logfile)
                 continue
             create_csv(native, to_learn, folder, file, base_path, logfile)
 
@@ -262,6 +268,7 @@ def print_all(sentence: str, file: TextIO):
 
 
 def create_data_for_language(native: str, to_learn: str):
+    global all_tokens, all_words
     logfile = open(f"logs/{native}_{to_learn}_logs.txt", "w")
     print_all("[CREATE_ALL_LIST_OF_WORD]", logfile)
     create_all_list_of_word(native, to_learn, logfile)
@@ -269,6 +276,11 @@ def create_data_for_language(native: str, to_learn: str):
     check_and_update_all_list_of_word(native, to_learn, logfile)
     print_all("[CREATE_ALL_CSV]", logfile)
     create_all_csv(native, to_learn, logfile)
+    print_all(f"[TOTAL_WORDS_BY_TYPE] {all_words}", logfile)
+    print_all(f"[TOTAL_WORDS] {sum([all_words[key] for key in all_words])}", logfile)
+    print_all(f"[TOTAL_TOKENS_BY_TYPE] {all_tokens}", logfile)
+    print_all(f"[TOTAL_TOKENS] {sum([all_tokens[key] for key in all_tokens])}", logfile)
+    print_all("[FINISH]", logfile)
     logfile.close()
 
 

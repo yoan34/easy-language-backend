@@ -1,0 +1,25 @@
+File data/test1_test2/nouns/csv/e.csv write successfully!
+File data/test1_test2/nouns/csv/g.csv write successfully!
+File data/test1_test2/nouns/csv/q.csv write successfully!
+Error when call API: That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID cdcb6f65a3e60f956fa318cb0db813fe in your message.)
+File data/test1_test2/nouns/csv/a.csv write successfully!
+File data/test1_test2/nouns/csv/z.csv write successfully!
+File data/test1_test2/nouns/csv/h.csv write successfully!
+File data/test1_test2/nouns/csv/r.csv write successfully!
+File data/test1_test2/nouns/csv/v.csv write successfully!
+Error when call API: That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID e44ac3ad92f72bb37dc3812e9a7236c5 in your message.)
+File data/test1_test2/nouns/csv/s.csv write successfully!
+File data/test1_test2/nouns/csv/u.csv write successfully!
+File data/test1_test2/nouns/csv/j.csv write successfully!
+File data/test1_test2/nouns/csv/n.csv write successfully!
+Error when call API: That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 64d8fca2a0d5dcdeb540a702b4bcc9c1 in your message.)
+File data/test1_test2/nouns/csv/y.csv write successfully!
+File data/test1_test2/nouns/csv/l.csv write successfully!
+Error when call API: Request timed out: HTTPSConnectionPool(host='api.openai.com', port=443): Read timed out. (read timeout=600)
+Error when call API: That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 773c7216e1ba5291012249c65e58ff47 in your message.)
+File data/test1_test2/nouns/csv/f.csv write successfully!
+Error when call API: That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 1860e04e8cae2cc208a538028e7a9c85 in your message.)
+File data/test1_test2/nouns/csv/i.csv write successfully!
+File data/test1_test2/nouns/csv/o.csv write successfully!
+Error when call API: That model is currently overloaded with other requests. You can retry your request, or contact us through our help center at help.openai.com if the error persists. (Please include the request ID 994a9c608ead2ac3d6c4ba17396d3c18 in your message.)
+File data/test1_test2/nouns/csv/p.csv write successfully!
