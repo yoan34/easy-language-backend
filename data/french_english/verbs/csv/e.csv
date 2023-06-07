@@ -1,0 +1,33 @@
+english;french;level;frequency;type;info
+to eat;manger;A1;10;ACTION;REGULAR
+to embrace;embrasser;B2;5;ACTION;REGULAR
+to endure;endurer;B2;4;STATE;REGULAR
+to enforce;appliquer;C1;3;ACTION;REGULAR
+to enjoy;apprécier;B1;7;STATE;REGULAR
+to enlarge;agrandir;B2;5;ACTION;REGULAR
+to enlighten;éclairer;B2;4;ACTION;REGULAR
+to entertain;divertir;B2;5;ACTION;REGULAR
+to erase;effacer;B1;6;ACTION;REGULAR
+to escape;s'échapper;B1;5;ACTION;IRREGULAR
+to evolve;évoluer;B2;5;ACTION;REGULAR
+to examine;examiner;B2;6;ACTION;REGULAR
+to exchange;échanger;B1;6;ACTION;REGULAR
+to excite;exciter;B2;5;ACTION;REGULAR
+to exclaim;s'exclamer;B2;3;STATE;IRREGULAR
+to exercise;faire de l'exercice;A2;8;ACTION;REGULAR
+to exhale;exhaler;B2;4;ACTION;REGULAR
+to exhibit;exposer;B2;5;ACTION;REGULAR
+to exist;exister;A2;7;STATE;REGULAR
+to expand;étendre;B2;6;ACTION;REGULAR
+to expect;s'attendre à;B1;7;ACTION;REGULAR
+to expedite;accélérer;C1;3;ACTION;REGULAR
+to expel;expulser;B2;5;ACTION;REGULAR
+to experience;expérimenter;B2;6;STATE;REGULAR
+to explain;expliquer;A2;10;ACTION;REGULAR
+to explore;explorer;B2;6;ACTION;REGULAR
+to export;exporter;B2;6;ACTION;REGULAR
+to expose;exposer;B2;5;ACTION;REGULAR
+to express;exprimer;B1;8;ACTION;REGULAR
+to extend;étendre;B2;5;ACTION;REGULAR
+to extract;extraire;B2;6;ACTION;REGULAR
+to eye;regarder attentivement;B2;4;ACTION;REGULAR

@@ -1,0 +1,64 @@
+english;french;level;frequency;type;info
+to gag;étouffer;B2;3;ACTION;REGULAR
+to gallop;galoper;A2;5;ACTION;REGULAR
+to gape;bâiller;B2;2;STATE;REGULAR
+to gasp;haleter;C1;4;ACTION;REGULAR
+to gather;rassembler;B1;7;ACTION;REGULAR
+to gawk;regarder béatement;B2;2;ACTION;REGULAR
+to gaze;contempler;B2;5;ACTION;REGULAR
+to gelatinize;gélifier;C1;1;STATE;REGULAR
+to generate;générer;B2;7;ACTION;REGULAR
+to gesticulate;gesticuler;B2;4;ACTION;REGULAR
+to get;obtenir;A1;10;ACTION;IRREGULAR
+to giggle;rire nerveusement;B2;4;ACTION;REGULAR
+to give;donner;A1;10;ACTION;IRREGULAR
+to glamorize;glamouriser;C1;2;ACTION;REGULAR
+to glance;jeter un coup d'œil;B2;5;ACTION;REGULAR
+to glare;regarder fixement;B2;5;ACTION;REGULAR
+to glaze;glaçurer;B2;4;ACTION;REGULAR
+to gleam;briller;B2;5;STATE;REGULAR
+to glean;glaner;B2;3;ACTION;REGULAR
+to glide;glisser;B2;5;ACTION;REGULAR
+to glimmer;briller faiblement;B2;4;STATE;REGULAR
+to glisten;briller;B2;5;STATE;REGULAR
+to glitter;briller;B2;6;STATE;REGULAR
+to gloat;se réjouir;C1;2;ACTION;REGULAR
+to globalize;mondialiser;C1;7;ACTION;REGULAR
+to glorify;glorifier;B2;5;ACTION;REGULAR
+to gloss;faire briller;B2;3;ACTION;REGULAR
+to glow;briller;B2;4;STATE;IRREGULAR
+to glue;coller;A2;7;ACTION;REGULAR
+to gnash;grincer;C2;2;ACTION;IRREGULAR
+to gnaw;ronger;B2;3;ACTION;REGULAR
+to go;aller;A1;10;ACTION;IRREGULAR
+to goof;faire une erreur;B2;2;ACTION;REGULAR
+to gossip;colporter des ragots;C1;4;ACTION;REGULAR
+to govern;gouverner;B2;6;ACTION;REGULAR
+to grab;saisir;B1;6;ACTION;REGULAR
+to grapple;lutter;C1;3;ACTION;REGULAR
+to grasp;saisir;B1;7;ACTION;REGULAR
+to grate;râper;B2;4;ACTION;REGULAR
+to gravitate;graviter;C1;5;STATE;REGULAR
+to graze;paître;B1;3;ACTION;REGULAR
+to grease;graisser;B2;4;ACTION;REGULAR
+to greet;saluer;A2;5;ACTION;REGULAR
+to grill;griller;A2;7;ACTION;REGULAR
+to grimace;grimacer;B2;3;STATE;REGULAR
+to grin;sourire largement;B1;4;ACTION;REGULAR
+to grind;moudre;B2;6;ACTION;REGULAR
+to grip;saisir;B2;5;ACTION;REGULAR
+to groan;gémir;C1;3;STATE;REGULAR
+to groom;brosser;B2;4;ACTION;REGULAR
+to groove;rainurer;B2;4;ACTION;REGULAR
+to grow;grandir;A2;9;STATE;IRREGULAR
+to growl;gronder;B2;5;ACTION;REGULAR
+to grumble;marmonner;B2;6;ACTION;REGULAR
+to grunt;grognement;C1;3;STATE;REGULAR
+to guarantee;garantir;B2;6;ACTION;REGULAR
+to guard;garder;A2;7;ACTION;REGULAR
+to guess;deviner;A2;6;ACTION;REGULAR
+to guide;guider;B2;5;ACTION;REGULAR
+to gulp;engloutir;C1;2;ACTION;REGULAR
+to gurgle;glouglouter;B2;3;ACTION;REGULAR
+to gush;jaillir;B2;5;ACTION;REGULAR
+to guzzle;engloutir;C1;4;ACTION;REGULAR

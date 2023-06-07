@@ -1,0 +1,46 @@
+english;french;level;frequency;type;info
+to ignite;allumer;B2;4;ACTION;REGULAR
+to imagine;imaginer;A2;6;STATE;REGULAR
+to impose;imposer;B2;5;ACTION;REGULAR
+to impress;impressionner;B2;5;ACTION;REGULAR
+to improve;améliorer;B1;6;ACTION;REGULAR
+to incite;inciter;C1;5;ACTION;REGULAR
+to include;inclure;B1;8;ACTION;REGULAR
+to increase;augmenter;A2;9;ACTION;REGULAR
+to indicate;indiquer;A2;10;ACTION;REGULAR
+to induce;induire;C1;4;ACTION;REGULAR
+to infect;infecter;B2;5;ACTION;REGULAR
+to inflate;gonfler;B2;5;ACTION;REGULAR
+to inflict;infliger;C1;4;ACTION;REGULAR
+to inform;informer;A2;6;ACTION;REGULAR
+to initiate;initier;B2;5;ACTION;REGULAR
+to inject;injecter;B2;5;ACTION;REGULAR
+to injure;blesser;B2;6;ACTION;REGULAR
+to innovate;innover;B2;4;ACTION;REGULAR
+to input;entrer;B2;3;ACTION;REGULAR
+to inquire;se renseigner;B2;4;ACTION;REGULAR
+to inscribe;inscrire;B2;3;ACTION;REGULAR
+to insert;insérer;B1;4;ACTION;REGULAR
+to insist;insister;B2;5;ACTION;REGULAR
+to inspect;inspecter;B2;4;ACTION;REGULAR
+to inspire;inspirer;B2;5;ACTION;REGULAR
+to install;installer;B1;7;ACTION;REGULAR
+to instruct;instruire;B2;6;ACTION;REGULAR
+to insult;insulter;B2;4;ACTION;REGULAR
+to integrate;intégrer;B1;8;ACTION;REGULAR
+to intend;avoir l'intention de;B1;5;STATE;IRREGULAR
+to interact;interagir;B2;7;ACTION;REGULAR
+to intercept;intercepter;B2;5;ACTION;REGULAR
+to interest;intéresser;A2;9;STATE;REGULAR
+to interfere;interférer;B2;4;ACTION;REGULAR
+to interject;interjecter;C1;2;ACTION;REGULAR
+to interlace;entrelacer;B2;3;ACTION;REGULAR
+to interpret;interpréter;B2;5;ACTION;REGULAR
+to interrupt;interrompre;B2;5;ACTION;REGULAR
+to interview;interviewer;B2;4;ACTION;REGULAR
+to introduce;présenter;B1;5;ACTION;REGULAR
+to invent;inventer;B2;5;ACTION;REGULAR
+to inventory;inventorier;C1;3;ACTION;REGULAR
+to invest;investir;B2;6;ACTION;REGULAR
+to invite;inviter;A2;8;ACTION;REGULAR
+to involve;impliquer;B2;7;STATE;REGULAR

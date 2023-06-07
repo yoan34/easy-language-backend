@@ -1,0 +1,124 @@
+english;french;level;frequency;type
+T-shirt;T-shirt;A2;9;CONCRETE
+TV;Télévision;A2;10;CONCRETE
+Table;Table;A1;10;CONCRETE
+Taco;Taco;B2;3;CONCRETE
+Taffy;Bonbon;B2;2;CONCRETE
+Tangelo;Tangelo;B1;2;CONCRETE
+Tangerine;Mandarine;A2;7;CONCRETE
+Tapioca;Tapioca;B2;3;CONCRETE
+Tarmac;Asphalte;B2;6;CONCRETE
+Tarragon;Estragon;B2;4;CONCRETE
+Tart;Tarte;A2;5;CONCRETE
+Tassel;Gland;B2;3;CONCRETE
+Teacup;Tasse à thé;A2;6;CONCRETE
+Teapot;Théière;A2;6;CONCRETE
+Teaspoon;Cuillère à thé;A2;6;CONCRETE
+Telephone;Téléphone;A2;10;CONCRETE
+Telescope;Télescope;B2;4;CONCRETE
+Television;Télévision;A2;10;CONCRETE
+Tennis;Tennis;A2;8;CONCRETE
+Tent;Tente;A2;6;CONCRETE
+Tentacle;Tentacule;C1;3;CONCRETE
+Termite;Termite;B2;4;CONCRETE
+Terrarium;Terrarium;B2;2;CONCRETE
+Terrazzo;Terrazzo;C1;1;CONCRETE
+Textbook;Manuel scolaire;A2;8;CONCRETE
+Theater;Théâtre;B2;7;CONCRETE
+Thermometer;Thermomètre;B1;6;CONCRETE
+Thermostat;Thermostat;B2;5;CONCRETE
+Thigh;Cuisse;A2;5;CONCRETE
+Thimble;Dé à coudre;B2;3;CONCRETE
+Thong;String-De pied;B1;4;CONCRETE
+Thorn;Épine;B2;3;CONCRETE
+Thread;Fil;A2;8;CONCRETE
+Throat;Gorge;A2;7;CONCRETE
+Throne;Trône;B2;5;CONCRETE
+Thumb;Pouce;A2;7;CONCRETE
+Thunder;Tonnerre;B2;6;ABSTRACT
+Thunderstorm;Orage;B2;5;CONCRETE
+Thyme;Thym;B2;4;CONCRETE
+Tiara;Diadème;C1;2;CONCRETE
+Ticket;Billet;A2;8;CONCRETE
+Tide;Marée;B2;5;ABSTRACT
+Tie;Cravate;A2;6;CONCRETE
+Tiger;Tigre;B1;4;CONCRETE
+Tile;Carreau;A2;7;CONCRETE
+Tin;Étain;B1;5;CONCRETE
+Tinsel;Guirlande;B2;4;CONCRETE
+Tiramisu;Tiramisu;A2;3;CONCRETE
+Tire;Pneu;B1;6;CONCRETE
+Tissue;Mouchoir;A2;7;CONCRETE
+Toad;Crapaud;A2;4;CONCRETE
+Toast;Toast;A2;8;CONCRETE
+Toaster;Grille-pain;A2;4;CONCRETE
+Tobacco;Tabac;B2;6;CONCRETE
+Toenail;Ongle de pied;A2;3;CONCRETE
+Toffee;Bonbon au caramel;A2;5;CONCRETE
+Tofu;Tofu;B2;4;CONCRETE
+Toilet;Toilette;A2;8;CONCRETE
+Tomato;Tomate;A2;10;CONCRETE
+Tombstone;Pierre tombale;B2;2;CONCRETE
+Tongs;Pince à épiler;A2;4;CONCRETE
+Tonic;Tonique;B2;5;ABSTRACT
+Toolbox;Boîte à outils;A2;3;CONCRETE
+Tooth;Dent;A2;9;CONCRETE
+Toothbrush;Brosse à dents;A1;10;CONCRETE
+Toothpaste;Dentifrice;A2;8;CONCRETE
+Toothpick;Cure-dent;A2;4;CONCRETE
+Top;Sommet;B2;6;CONCRETE
+Topaz;Topaze;B2;2;CONCRETE
+Torch;Torche;B2;5;CONCRETE
+Torchère;Torche;B2;2;CONCRETE
+Tornado;Tornade;B2;3;CONCRETE
+Touchdown;Touchdown;B2;4;CONCRETE
+Towel;Serviette de bain;A2;6;CONCRETE
+Tower;Tour;A2;8;CONCRETE
+Town;Ville;A2;8;CONCRETE
+Toy;Jouet;A1;9;CONCRETE
+Tractor;Tracteur;B1;4;CONCRETE
+Traffic;Circulation;B2;9;ABSTRACT
+Trailer;Remorque;B2;5;CONCRETE
+Train;Train;A2;9;CONCRETE
+Trampoline;Trampoline;B1;4;CONCRETE
+Transom;Traverse;C2;2;CONCRETE
+Trash;Déchets;B2;8;CONCRETE
+Travel;Voyage;A2;9;ABSTRACT
+Tray;Plateau;A2;6;CONCRETE
+Treadmill;Tapis de course;B2;5;CONCRETE
+Tree;Arbre;A1;10;CONCRETE
+Triangle;Triangle;A2;8;CONCRETE
+Tricycle;Tricycle;A2;4;CONCRETE
+Trifle;Trifle;B2;4;CONCRETE
+Tripod;Trépied;A2;5;CONCRETE
+Trolley;Chariot;B1;6;CONCRETE
+Trombone;Trombone;B2;3;CONCRETE
+Trophy;Trophée;B2;4;CONCRETE
+Truck;Camion;A2;8;CONCRETE
+Truffle;Truffe;B2;3;CONCRETE
+Trumpet;Trompette;B1;5;CONCRETE
+Trunk;Coffre;B1;6;CONCRETE
+Tuba;Tuba;B2;4;CONCRETE
+Tugboat;Remorqueur;B2;3;CONCRETE
+Tulip;Tulipe;A2;5;CONCRETE
+Tuna;Thon;B2;6;CONCRETE
+Tunic;Tunique;B2;3;CONCRETE
+Tunnel;Tunnel;B1;8;CONCRETE
+Turban;Turban;B1;4;CONCRETE
+Turquoise;Turquoise;B2;5;CONCRETE
+Turtle;Tortue;A2;6;CONCRETE
+Turtleneck;Col roulé;B2;3;CONCRETE
+Tusk;Défense;B2;2;CONCRETE
+Tutu;Tutu;A1;3;CONCRETE
+Tweezer;Pince à épiler;B2;4;CONCRETE
+Tweezers;Pince à épiler;B2;5;CONCRETE
+Twig;Brindille;B1;4;CONCRETE
+Twilight;Crépuscule;B2;6;ABSTRACT
+Twine;ficelle;B1;4;CONCRETE
+Twist;torsion;B2;6;CONCRETE
+Twister;tornade;B2;3;CONCRETE
+Two-piece;deux pièces;B2;2;CONCRETE
+Type;type;B2;8;ABSTRACT
+Typewriter;Machine à écrire;B2;3;CONCRETE
+Typography;Typographie;B2;4;ABSTRACT
+Tyrannosaurus;Tyrannosaure;B2;2;CONCRETE

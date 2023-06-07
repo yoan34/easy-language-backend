@@ -1,0 +1,25 @@
+english;french;level;frequency;type;info
+to race;courir;A2;6;ACTION;REGULAR
+to reach;atteindre;B1;7;ACTION;REGULAR
+to read;lire;A1;10;ACTION;REGULAR
+to realize;réaliser;B2;5;ACTION;REGULAR
+to reduce;réduire;B1;7;ACTION;REGULAR
+to reflect;réfléchir;B2;6;ACTION;REGULAR
+to rejoice;se réjouir;B2;3;STATE;REGULAR
+to relax;se détendre;A2;5;STATE;REGULAR
+to rely;compter sur;B2;6;ACTION;REGULAR
+to remember;se souvenir;A2;6;STATE;IRREGULAR
+to renew;renouveler;B2;5;ACTION;REGULAR
+to repair;réparer;A2;7;ACTION;REGULAR
+to reproduce;reproduire;B2;4;ACTION;REGULAR
+to rescue;sauver;B1;6;ACTION;REGULAR
+to resist;résister;B1;6;STATE;REGULAR
+to respond;répondre;B1;7;ACTION;REGULAR
+to revise;réviser;B1;6;ACTION;REGULAR
+to reward;récompenser;B2;5;ACTION;REGULAR
+to ride;monter à cheval;A2;5;ACTION;REGULAR
+to rotate;tourner;B2;6;ACTION;REGULAR
+to rub;frotter;A2;6;ACTION;REGULAR
+to run;courir;A1;10;ACTION;IRREGULAR
+to rush;se dépêcher;B2;7;ACTION;REGULAR
+to rust;rouiller;B2;4;STATE;REGULAR

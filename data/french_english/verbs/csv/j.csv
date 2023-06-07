@@ -1,0 +1,20 @@
+english;french;level;frequency;type;info
+to jail;emprisonner;B2;4;ACTION;REGULAR
+to jam;bloquer;B2;6;ACTION;REGULAR
+to jerk;secouer;B2;5;ACTION;REGULAR
+to jettison;jeter par-dessus bord;C1;2;ACTION;REGULAR
+to jibe;virer de bord;C1;3;ACTION;REGULAR
+to jingle;tintinnabuler;B2;4;ACTION;REGULAR
+to jinx;jeter un sort;C1;2;ACTION;REGULAR
+to jive;danser le jive;B2;3;ACTION;REGULAR
+to jockey;être jockey;B2;3;STATE;REGULAR
+to jog;jogger;A2;6;ACTION;REGULAR
+to join;joindre;B1;8;ACTION;REGULAR
+to jolt;secouer;B2;5;ACTION;REGULAR
+to jostle;bousculer;C1;4;ACTION;REGULAR
+to joust;jouter;C2;2;ACTION;REGULAR
+to judge;juger;B2;9;STATE;REGULAR
+to juggle;jongler;B2;5;ACTION;REGULAR
+to jumble;mélanger;B2;3;ACTION;REGULAR
+to jump;sauter;A2;8;ACTION;IRREGULAR
+to jut;dépasser;C1;2;STATE;IRREGULAR

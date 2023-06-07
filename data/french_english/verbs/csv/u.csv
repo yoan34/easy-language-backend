@@ -1,0 +1,32 @@
+english;french;level;frequency;type;info
+to unbolt;déverrouiller;B1;4;ACTION;REGULAR
+to unbox;déballer;A2;3;ACTION;REGULAR
+to unclasp;dégrafer;B2;2;ACTION;REGULAR
+to uncork;déboucher;A2;4;ACTION;REGULAR
+to uncover;découvrir;B2;5;ACTION;REGULAR
+to understand;comprendre;B1;9;ACTION;REGULAR
+to undo;défaire;B1;6;ACTION;REGULAR
+to unfasten;détacher;B2;4;ACTION;REGULAR
+to unhook;décrocher;B2;3;ACTION;REGULAR
+to unite;unir;B2;5;ACTION;REGULAR
+to unlace;délasser;B2;2;ACTION;REGULAR
+to unleash;déchaîner;C1;3;ACTION;REGULAR
+to unlock;déverrouiller;A2;4;ACTION;REGULAR
+to unplug;débrancher;B1;5;ACTION;REGULAR
+to unravel;défaire;B2;3;ACTION;REGULAR
+to unroll;dérouler;B1;4;ACTION;REGULAR
+to untangle;démêler;B2;3;ACTION;REGULAR
+to untie;détacher;A2;4;ACTION;REGULAR
+to unveil;dévoiler;B2;5;ACTION;REGULAR
+to unwind;dérouler;B2;4;ACTION;REGULAR
+to unzip;décompresser;B1;4;ACTION;REGULAR
+to update;mettre à jour;B1;8;ACTION;REGULAR
+to upgrade;améliorer;B2;6;ACTION;REGULAR
+to uphold;maintenir;C1;5;STATE;REGULAR
+to uplift;élever;C1;3;ACTION;REGULAR
+to uproot;arracher;C1;3;ACTION;REGULAR
+to urge;exhorter;B2;5;ACTION;REGULAR
+to use;utiliser;A1;10;ACTION;REGULAR
+to usher;mener;C1;2;ACTION;REGULAR
+to utilize;utiliser;C1;4;ACTION;REGULAR
+to utter;prononcer;B2;5;ACTION;REGULAR

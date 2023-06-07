@@ -1,0 +1,65 @@
+english;french;level;frequency;type
+an oak;un chêne;B2;5;CONCRETE
+an oasis;une oasis;B2;4;CONCRETE
+an oat;une avoine;A2;3;CONCRETE
+an oatmeal;une bouillie d'avoine;B2;2;CONCRETE
+an obelisk;un obélisque;C1;3;CONCRETE
+an object;un objet;A2;9;CONCRETE
+an obligation;une obligation;B2;7;ABSTRACT
+an observation;une observation;B2;6;CONCRETE
+an observer;un observateur;B2;4;CONCRETE
+an obstacle;un obstacle;B2;7;CONCRETE
+an occasion;une occasion;B2;6;CONCRETE
+an occupation;une occupation;B1;5;CONCRETE
+an ocean;un océan;A2;7;CONCRETE
+an octagon;un octogone;B2;3;CONCRETE
+an octopus;une pieuvre;B2;4;CONCRETE
+an odor;une odeur;B2;5;CONCRETE
+an offence;une infraction;B2;6;ABSTRACT
+an offer;une offre;B1;8;ABSTRACT
+an office;un bureau;A2;9;CONCRETE
+an officer;un officier;B2;4;CONCRETE
+an official;un fonctionnaire;B2;8;CONCRETE
+an offspring;une progéniture;B2;3;CONCRETE
+an oil;une huile;A2;9;CONCRETE
+an old-fashioned;un vieux jeu;B2;4;ABSTRACT
+an olive;une olive;A2;7;CONCRETE
+an omega;un oméga;C2;2;CONCRETE
+an onion;un oignon;A2;7;CONCRETE
+an online;en ligne;B2;8;ABSTRACT
+an onset;un début;B2;4;CONCRETE
+an opera;un opéra;B2;5;CONCRETE
+an operation;une opération;B2;7;CONCRETE
+an operator;un opérateur;B2;5;CONCRETE
+an opinion;une opinion;B1;8;ABSTRACT
+an opponent;un adversaire;B2;4;CONCRETE
+an opportunity;une opportunité;B2;7;ABSTRACT
+an opposition;une opposition;B2;6;ABSTRACT
+an option;une option;B2;7;ABSTRACT
+an orange;une orange;A2;8;CONCRETE
+an orbit;une orbite;B2;4;ABSTRACT
+an orchestra;un orchestre;B2;5;CONCRETE
+an order;une commande;B2;6;CONCRETE
+an ordinary;ordinaire;B1;5;ABSTRACT
+an organ;un organe;B2;5;CONCRETE
+an organization;une organisation;B2;7;ABSTRACT
+an origin;une origine;B2;6;ABSTRACT
+an ornament;un ornement;B2;5;CONCRETE
+an orphan;un orphelin;B2;3;CONCRETE
+an ostrich;une autruche;A2;2;CONCRETE
+an other;un autre;A2;10;ABSTRACT
+an outcome;un résultat;B2;7;ABSTRACT
+an outfit;une tenue;B1;6;CONCRETE
+an outlet;une prise de courant;B2;5;CONCRETE
+an outline;un plan;B2;5;ABSTRACT
+an outlook;une perspective;B2;6;ABSTRACT
+an output;une production;B2;6;CONCRETE
+an oven;un four;A2;8;CONCRETE
+an overcharge;une surfacturation;B2;3;ABSTRACT
+an overdraft;un découvert;B2;6;CONCRETE
+an overpayment;un trop-perçu;B2;2;ABSTRACT
+an oversight;une négligence;C1;5;ABSTRACT
+an owner;un propriétaire;B2;6;CONCRETE
+an ox;un bœuf;A2;3;CONCRETE
+an oxygen;un oxygène;B2;5;CONCRETE
+an oyster;une huître;B2;4;CONCRETE

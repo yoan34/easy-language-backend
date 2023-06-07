@@ -1,0 +1,57 @@
+english;french;level;frequency;type;info
+to obey;obéir;B1;6;ACTION;REGULAR
+to oblige;obliger;B2;5;ACTION;REGULAR
+to observe;observer;B1;6;ACTION;REGULAR
+to obstruct;obstruer;C2;2;ACTION;REGULAR
+to obtain;obtenir;A2;8;ACTION;REGULAR
+to occupy;occuper;B2;6;ACTION;REGULAR
+to occur;se produire;B2;6;STATE;REGULAR
+to offer;offrir;A2;8;ACTION;REGULAR
+to offset;compenser;C1;4;ACTION;REGULAR
+to omit;omettre;B2;5;ACTION;REGULAR
+to open;ouvrir;A2;8;ACTION;REGULAR
+to operate;opérer;B2;6;ACTION;REGULAR
+to opine;donner son avis;C1;2;STATE;REGULAR
+to oppose;s'opposer;B2;5;ACTION;REGULAR
+to opt;opter;B2;4;ACTION;REGULAR
+to optimize;optimiser;B2;5;ACTION;REGULAR
+to orchestrate;orchestrer;C1;3;ACTION;REGULAR
+to order;ordonner;B2;5;ACTION;REGULAR
+to organize;organiser;A2;6;ACTION;REGULAR
+to orient;orienter;B1;4;ACTION;REGULAR
+to originate;prendre naissance;C1;5;ACTION;REGULAR
+to ornament;orner;B2;4;ACTION;REGULAR
+to oscillate;osciller;B2;4;ACTION;REGULAR
+to osculate;s'embrasser;C2;1;ACTION;REGULAR
+to oust;évincer;C1;3;ACTION;REGULAR
+to outdo;dépasser;C1;5;ACTION;REGULAR
+to outfit;équiper;B2;4;ACTION;REGULAR
+to outgrow;dépasser (en taille);B2;3;STATE;REGULAR
+to outlast;durer plus longtemps que;C1;4;STATE;REGULAR
+to outline;décrire brièvement;B2;6;ACTION;REGULAR
+to outmaneuver;déjouer;C1;3;ACTION;REGULAR
+to outperform;surclasser;B2;4;ACTION;REGULAR
+to outrage;indigner;C1;3;STATE;REGULAR
+to outshine;éclipser;B2;4;STATE;REGULAR
+to outsmart;dépasser en astuce;C1;3;ACTION;REGULAR
+to outsource;sous-traiter;B2;5;ACTION;REGULAR
+to outweigh;être plus important que;C1;3;STATE;REGULAR
+to overcome;surmonter;B2;6;ACTION;REGULAR
+to overdo;exagérer;B2;3;ACTION;REGULAR
+to overestimate;surestimer;B2;5;ACTION;REGULAR
+to overflow;déborder;B2;5;ACTION;REGULAR
+to overhaul;réviser complètement;C1;3;ACTION;REGULAR
+to overlap;chevaucher;B2;4;ACTION;REGULAR
+to overload;surcharger;C1;4;ACTION;REGULAR
+to overlook;négliger;B2;5;ACTION;REGULAR
+to overpower;dominer;B2;4;ACTION;REGULAR
+to overreact;sur-réagir;B2;3;ACTION;REGULAR
+to override;annuler;C1;3;ACTION;REGULAR
+to oversee;superviser;B2;5;ACTION;REGULAR
+to overshadow;éclipser;C1;3;STATE;REGULAR
+to oversleep;dormir trop longtemps;B1;5;ACTION;REGULAR
+to overstate;exagérer;C1;4;ACTION;REGULAR
+to overtake;dépasser;B2;6;ACTION;REGULAR
+to overthrow;renverser;C1;5;ACTION;REGULAR
+to overtop;dominer;C2;2;STATE;REGULAR
+to overwhelm;submerger;B2;5;ACTION;REGULAR

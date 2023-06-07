@@ -1,0 +1,49 @@
+english;french;level;frequency;type;info
+to lament;pleurer;B2;3;ACTION;REGULAR
+to land;atterrir;A2;7;ACTION;REGULAR
+to last;durer;B1;6;STATE;REGULAR
+to latch;verrouiller;B2;4;ACTION;REGULAR
+to laud;louer;C1;2;ACTION;REGULAR
+to laugh;rire;B1;6;ACTION;REGULAR
+to launch;lancer;B2;7;ACTION;REGULAR
+to lavish;prodiguer;C2;2;STATE;REGULAR
+to lay;poser;A2;8;ACTION;IRREGULAR
+to lead;mener;B2;9;ACTION;IRREGULAR
+to leak;fuir;B2;4;ACTION;REGULAR
+to lean;pencher;B2;5;ACTION;IRREGULAR
+to leap;sauter;B2;3;ACTION;IRREGULAR
+to learn;apprendre;A1;10;STATE;REGULAR
+to leave;partir;A1;10;ACTION;IRREGULAR
+to lecture;donner un cours;C1;5;ACTION;REGULAR
+to lend;prêter;A2;7;ACTION;REGULAR
+to let;laisser;A2;10;ACTION;REGULAR
+to level;niveler;B2;4;ACTION;REGULAR
+to liberate;libérer;B2;6;ACTION;REGULAR
+to license;licencier;B2;5;ACTION;REGULAR
+to lick;lécher;A2;4;ACTION;REGULAR
+to lie;mentir;B1;5;STATE;IRREGULAR
+to lift;lever;A2;6;ACTION;REGULAR
+to light;allumer;A2;7;ACTION;REGULAR
+to like;aimer;A1;9;ACTION;REGULAR
+to limp;boiter;B2;4;STATE;REGULAR
+to linger;s'attarder;B2;5;STATE;REGULAR
+to list;énumérer;B2;3;ACTION;REGULAR
+to listen;écouter;A2;9;ACTION;REGULAR
+to live;vivre;A1;9;STATE;REGULAR
+to load;charger;A2;8;ACTION;REGULAR
+to loaf;paresser;B2;3;ACTION;REGULAR
+to loan;prêter;B1;5;ACTION;IRREGULAR
+to lobby;faire pression;C1;4;ACTION;REGULAR
+to locate;localiser;B2;6;ACTION;REGULAR
+to lock;verrouiller;B1;7;ACTION;REGULAR
+to log;enregistrer;B2;5;ACTION;REGULAR
+to loiter;rôder;C1;2;ACTION;REGULAR
+to long;désirer ardemment;B2;4;STATE;IRREGULAR
+to look;regarder;A1;9;ACTION;REGULAR
+to loom;se profiler;B2;5;STATE;REGULAR
+to loop;faire une boucle;B2;4;ACTION;REGULAR
+to loosen;desserrer;B1;6;ACTION;REGULAR
+to lope;déplacer en sautillant;C1;2;ACTION;IRREGULAR
+to lose;perdre;B1;7;ACTION;IRREGULAR
+to love;aimer;A2;9;STATE;REGULAR
+to lower;abaisser;B2;5;ACTION;REGULAR

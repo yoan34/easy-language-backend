@@ -1,0 +1,47 @@
+english;french;level;frequency;type;info
+to walk;marcher;A1;9;ACTION;REGULAR
+to wander;errer;B2;4;ACTION;REGULAR
+to want;vouloir;A2;10;STATE;IRREGULAR
+to warm;réchauffer;B1;6;ACTION;REGULAR
+to warn;avertir;B2;7;ACTION;REGULAR
+to wash;laver;A2;7;ACTION;REGULAR
+to waste;gaspiller;B2;5;ACTION;REGULAR
+to watch;regarder;A2;8;ACTION;REGULAR
+to water;arroser;A2;6;ACTION;REGULAR
+to wave;faire signe de la main;B1;4;ACTION;REGULAR
+to waver;hésiter;B2;5;ACTION;REGULAR
+to weaken;affaiblir;B2;6;ACTION;REGULAR
+to wear;porter/usure;A2;8;STATE;IRREGULAR
+to weave;tisser;B2;3;ACTION;REGULAR
+to weep;pleurer;A2;6;ACTION;IRREGULAR
+to weigh;peser;B2;5;ACTION;REGULAR
+to welcome;accueillir;B1;7;ACTION;REGULAR
+to wend;aller;B2;3;ACTION;IRREGULAR
+to wet;mouiller;A2;5;ACTION;REGULAR
+to whine;pleurnicher;C1;2;STATE;REGULAR
+to whip;fouetter;B2;5;ACTION;REGULAR
+to whirl;tournoyer;B2;3;ACTION;REGULAR
+to whisper;chuchoter;B1;5;ACTION;REGULAR
+to whistle;siffler;A2;6;ACTION;REGULAR
+to widen;élargir;B2;4;ACTION;REGULAR
+to wield;manier;C1;4;ACTION;REGULAR
+to win;gagner;A2;9;ACTION;REGULAR
+to wind;enrouler;B2;5;ACTION;REGULAR
+to wink;faire un clin d'œil;B2;3;ACTION;REGULAR
+to wipe;essuyer;A2;8;ACTION;REGULAR
+to wish;souhaiter;B1;6;ACTION;REGULAR
+to withdraw;retirer;B2;7;ACTION;REGULAR
+to withhold;retenir;C1;4;ACTION;REGULAR
+to withstand;résister à;C1;3;ACTION;REGULAR
+to witness;témoigner;C1;5;ACTION;REGULAR
+to wobble;vaciller;B2;3;ACTION;REGULAR
+to wonder;se demander;B1;5;STATE;REGULAR
+to work;travailler;A1;10;ACTION;REGULAR
+to worry;s'inquiéter;B1;6;STATE;REGULAR
+to worship;vénérer;C1;2;ACTION;REGULAR
+to wound;blesser;B2;5;ACTION;REGULAR
+to wrap;envelopper;B1;6;ACTION;REGULAR
+to wreck;détruire;C1;4;ACTION;REGULAR
+to wrestle;lutter;B2;3;ACTION;REGULAR
+to wriggle;se tortiller;C2;2;STATE;REGULAR
+write;écrire;A2;9;ACTION;REGULAR
