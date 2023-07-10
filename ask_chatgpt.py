@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import openai
 import csv
 import time
@@ -7,6 +8,11 @@ from typing import List, TextIO
 from dotenv import load_dotenv
 
 from constants import QUESTION_FOR_LIST_FORMAT, CONTEXT_FOR_LIST_FORMAT, HEADERS_CSV, get_more_info_for_context
+
+from models.computer import Computer
+from models.generator import Generator
+from models.logger import Logger
+from models.chatGPT import ChatGPT
 
 # https://universaldependencies.org/u/dep/
 load_dotenv()
@@ -22,6 +28,18 @@ N_ADVERBS_BY_REQUEST = 15
 all_tokens = {'verbs': 0, 'adverbs': 0, 'nouns': 0, 'adjectives': 0}
 all_words = {'verbs': 0, 'adverbs': 0, 'nouns': 0, 'adjectives': 0}
 
+native_lang = "french"
+target_lang = "english"
+logger = Logger(f"{native_lang}_{target_lang}.log")
+computer = Computer(f"../data/{native_lang}_{target_lang}", logger)
+generator = Generator(computer, native_lang, target_lang, logger)
+chatGPT = ChatGPT(logger)
+generator.create_all_word_files()
+generator.fix_word_files_errors()
+
+print(generator.computer.path)
+print(generator.computer.base_path)
+input()
 def retry_api_call(max_attempts=10, delay=1):
     def decorator(api_call_func):
         def wrapper(*args, **kwargs):
@@ -77,13 +95,9 @@ def add_article_or_to_before_word(words: List[str], letter: str, folder: str):
     return words
 
 
-def remove_numeration_and_bad_word(language: str, path: str, letter: str):
-    content = []
+def remove_numeration_and_bad_word_from_file(file: Path):
     new_content = []
-    with open(path, 'r') as file:
-        content = file.readlines()
-    
-    for line in content:
+    for line in computer.read_file(file.name):
         if line[0].isdigit():
             word = line.split('. ')[1]
             word_formatted = f"{word.replace('.', '').strip()}\n"
@@ -92,43 +106,33 @@ def remove_numeration_and_bad_word(language: str, path: str, letter: str):
         if 'Sorry,' in line:
             continue
         # CREER CONDITION POUR LES NOUN QUI SONT PAS INTEGRER CAR "a cat", "a" == "c"
+        letter = file.stem[-1]
         if line.startswith(letter) or line.startswith(letter.capitalize()):
             line_formatted = f"{line.replace('.', '').strip()}\n"
             new_content.append(line_formatted)
-            
-    new_content.sort()
-    with open(path, 'w') as file:
-        file.writelines(new_content)
+
+    computer.write_file(file.name, sorted(new_content))
         
 
-def remove_duplicate_word(path: str):
-    content = []
-    with open(path, 'r') as file:
-        content = file.readlines()
-    
-    with open(path, 'w') as file:
-        file.writelines(list(dict.fromkeys(content)))
+def remove_duplicate_word_from_file(filename: str):
+    content = computer.read_file(filename)
+    computer.write_file(filename, list(dict.fromkeys(content)))
   
 
-def remove_compose_word(path: str):
-    content = []
+def remove_compose_word_from_file(filename: str):
     new_content = [] 
-    with open(path, 'r') as file:
-        content = file.readlines()
+    content = computer.read_file(filename)
         
     for word in content:
         if len(word.split(' ')) == 1:
             new_content.append(word)
-            
-    with open(path, 'w') as file:
-        file.writelines(new_content)   
+
+    computer.write_file(filename, new_content)
       
 
-def remove_conjugated_verb(path: str):
-    content = []
+def remove_conjugated_verb_from_file(filename: str):
     new_content = []
-    with open(path, 'r') as file:
-        content = file.readlines()
+    content = computer.read_file(filename)
         
     for verb in content:
         if not verb.replace('\n', '').endswith('ed') or verb == 'need\n':
@@ -136,31 +140,21 @@ def remove_conjugated_verb(path: str):
         if verb.replace('\n', '').endswith('ing'):
             pass
             # print(f"{verb}  -> {path}")
-        
-    with open(path, 'w') as file:
-        file.writelines(list(dict.fromkeys(new_content)))   
+    computer.write_file(filename, list(dict.fromkeys(new_content)))
         
 # PURE FUNCTIONAL      
 def check_and_update_all_list_of_word(native:str , to_learn: str, logfile: TextIO):
     global all_words
-    folders = os.listdir(f"data/{native}_{to_learn}")
-    for folder in folders:
-        files = os.listdir(f"data/{native}_{to_learn}/{folder}/list")
-        for file in files:
-            path = f"data/{native}_{to_learn}/{folder}/list/{file}"
-            letter = file.split('.')[0][-1]
-            remove_numeration_and_bad_word(to_learn, path, letter)
-            remove_duplicate_word(path)
-            remove_compose_word(path)
+    path = f"{native}_{to_learn}"
+    for folder in computer.change_directory(path).list_folders:
+        for file in computer.change_directory(f"{folder.name}/list").list_files:
+            remove_numeration_and_bad_word_from_file(file)
+            remove_duplicate_word_from_file(file.name)
+            remove_compose_word_from_file(file.name)
             if folder == 'verbs':
-                remove_conjugated_verb(path)
+                remove_conjugated_verb_from_file(file.name)
+            all_words[folder] += len(computer.read_file(file.name))
 
-    for folder in folders:
-        files = os.listdir(f"data/{native}_{to_learn}/{folder}/list")
-        for file in files:
-            path = f"data/{native}_{to_learn}/{folder}/list/{file}"
-            with open(path, 'r') as f:
-                all_words[folder] += len(f.readlines())
 
 
 def create_all_list_of_word(native: str, to_learn: str, logfile: TextIO):
