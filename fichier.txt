@@ -1,6 +1,0 @@
-create folder: data/french_english/verbs
-     create file list/start_by_a.csv sucessfully (53 tokens)
-     create file list/start_by_b.csv sucessfully (83 tokens)
-     create file list/start_by_c.csv sucessfully (72 tokens)
-     create file list/start_by_d.csv sucessfully (163 tokens)
-     create file list/start_by_e.csv sucessfully (45 tokens)

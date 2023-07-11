@@ -7,8 +7,6 @@ import openai
 load_dotenv()
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
-
-
 QUESTION_FOR_LIST_FORMAT = "Transform the following list of {} into the expected list of lists of {} without comments. {}"
 CONTEXT_FOR_LIST_FORMAT = """
 I'm giving you a list of {} and guidelines, you have to create a list of list. For each {}, you have to create list with:

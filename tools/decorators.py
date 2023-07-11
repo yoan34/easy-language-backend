@@ -6,7 +6,7 @@ def chatgpt_log(func):
         self.logger.log(f"{' ' * 8}[API_CONTEXT] {context}")
         self.logger.log(f"{' ' * 8}[API_QUESTION] {question}")
         answer, tokens = func(self, question, context, *args, **kwargs)
-        self.logger.log(f"{' ' * 8}[API_ANSWER] {answer}")
+        self.logger.log(f"{' ' * 8}[API_ANSWER] {answer.splitlines()}")
         self.logger.log(f"{' ' * 8}[API_TOKENS] {tokens}")
         return answer
     return wrapper
