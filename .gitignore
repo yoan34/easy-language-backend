@@ -8,6 +8,3 @@ config.json
 # Fichiers temporaires
 __pycache__/
 *.pyc
-
-# Fichiers de données
-models/
