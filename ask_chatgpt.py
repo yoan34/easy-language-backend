@@ -7,7 +7,6 @@ import ast
 from typing import List, TextIO
 from dotenv import load_dotenv
 
-from constants import QUESTION_FOR_LIST_FORMAT, CONTEXT_FOR_LIST_FORMAT, HEADERS_CSV, get_more_info_for_context
 
 from models.computer import Computer
 from models.generator import Generator
@@ -31,9 +30,9 @@ all_words = {'verbs': 0, 'adverbs': 0, 'nouns': 0, 'adjectives': 0}
 native_lang = "french"
 target_lang = "english"
 logger = Logger(f"{native_lang}_{target_lang}.log")
-computer = Computer(f"../data/{native_lang}_{target_lang}", logger)
-generator = Generator(computer, native_lang, target_lang, logger)
 chatGPT = ChatGPT(logger)
+computer = Computer(f"../data/{native_lang}_{target_lang}", logger)
+generator = Generator(computer, native_lang, target_lang, logger, chatGPT)
 generator.create_all_word_files()
 generator.fix_word_files_errors()
 

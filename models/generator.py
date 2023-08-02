@@ -1,8 +1,11 @@
 import string
+import re
+import csv
+from pathlib import Path
 from models.computer import Computer
 from models.logger import Logger
 from models.chatGPT import ChatGPT
-from tools.categories import CATEGORIES, CONTEXT
+from tools.categories import CATEGORIES
 
 
 # Tips pour trouver des noms de variables
@@ -31,48 +34,105 @@ class Generator:
         self.gpt = gpt
         self.native_lang = native_lang
         self.target_lang = target_lang
-        self.verbs = 0
-        self.nouns = 0
-        self.adjectives = 0
-        self.adverbs = 0
+        self.categories = {
+            'verb': 0,
+            'noun': 0,
+            'adjective': 0,
+            'adverb': 0
+        }
         self.tokens = 0
         self.total_words = 0
 
-
-    def create_all_word_files(self):
+    # Text file part
+    def create_all_word_files(self) -> None:
         self.logger.log("creation all text file")
         for category in Generator.WORD_CATEGORIES:
             new_folder = f"{category}/list"
             self.computer.create_folder(new_folder).change_directory(new_folder)
-            for letter in Generator.ALPHABET[:5]:
+            for letter in Generator.ALPHABET[:10]:
                 if self.computer.file_exists(letter + '.txt'):
                     continue
-                self.create_word_file(category, letter)
+                self._create_word_file(category, letter)
             self.computer.comeback_to_base_path()
 
-
-    def create_word_file(self, category: str, letter: str):
-        context = ChatGPT.get_context_to_generate_lexicon(self.target_lang, category)
-        question = ChatGPT.get_question_to_generate_lexicon(category, letter)
-        response = self.gpt.answer_to_generate_lexicon(question, context, category)
+    def _create_word_file(self, category: str, letter: str) -> None:
+        context = ChatGPT.get_context_to_generate_lexicon(self.target_lang, category, letter)
+        question = ChatGPT.get_question_to_generate_lexicon(self.target_lang, category, letter)
+        response = self.gpt.answer_to_generate_lexicon(context, "", category)
         self.computer.write_file(filename=f'{letter}.txt', content=response)
-        # A voir pour ajouter les mots comment faire
-        self.total_words += len(response.split())
 
-    def fix_word_files_errors(self):
+    # Check text files part
+    def fix_word_files_errors(self) -> None:
         for folder in self.computer.list_folders:
             for file in self.computer.change_directory(f"{folder.name}/list").list_files:
-                remove_numeration_and_bad_word_from_file(file)
-                remove_duplicate_word_from_file(file.name)
-                remove_compose_word_from_file(file.name)
-                if folder == 'verbs':
-                    remove_conjugated_verb_from_file(file.name)
-                all_words[folder] += len(computer.read_file(file.name))
+                self.logger.log(f"Len of {file.name} before fix errors -> {len(self.computer.read_file(file.name))}")
+                self._remove_numeration(file.name)
+                self._remove_useless_chatgpt_sentence(file.name)
+                self._remove_duplicates(file.name)
+                self._remove_quotes(file.name)
+                self.categories[folder.name] += len(self.computer.read_file(file.name))
+                self.logger.log(f"Len of {file.name} after fix errors -> {len(self.computer.read_file(file.name))}")
+            self.computer.comeback_to_base_path()
 
+    def _remove_numeration(self, filename: str) -> None:
+        new_content = []
+        for line in self.computer.read_file(filename):
+            if re.match(r'^\d+\s*-\s*', line):
+                word = re.split(r'\d+\s*-\s*', line, maxsplit=1)[1]
+                formatted_word = f"{word.replace('.', '').strip()}"
+                new_content.append(formatted_word)
+            elif re.match(r'^\d+[.\s]?', line):
+                word = re.split(r'\d+[.\s]?', line, maxsplit=1)[1]
+                formatted_word = f"{word.replace('.', '').strip()}"
+                new_content.append(formatted_word)
+            else:
+                new_content.append(line.strip())
+        self.computer.write_file(filename, sorted(new_content))
 
+    def _remove_useless_chatgpt_sentence(self, filename: str) -> None:
+        new_content = []
+        useless_content = ["Sorry, ", "sorry, ", "Certainly,"]
+        for line in self.computer.read_file(filename):
+            if any(content in line for content in useless_content):
+                continue
+            new_content.append(line)
+        self.computer.write_file(filename, sorted(new_content))
 
+    def _remove_duplicates(self, filename: str) -> None:
+        file_content = self.computer.read_file(filename)
+        unique_content = list(set(file_content))
+        self.computer.write_file(filename, sorted(unique_content))
 
+    def _remove_quotes(self, filename: str) -> None:
+        new_content = []
+        for line in self.computer.read_file(filename):
+            new_line = line.replace("'", "")
+            new_line = new_line.replace('"', '')
+            new_content.append(new_line)
+        self.computer.write_file(filename, sorted(new_content))
 
+    # CSV file part
+    def create_all_csv_files(self) -> None:
+        self.logger.log("creation all csv files")
+        for category in Generator.WORD_CATEGORIES:
+            self.computer.create_folder(f"{category}/csv")
+            files = self.computer.change_directory(f"{category}/list").list_files
+            self.computer.change_directory('../csv')
+            print(f"HERE {self.computer.path}")
+            for file in files:
+                if not self.computer.file_exists(file.name):
+                    self._create_csv_file(category, file)
+            self.computer.comeback_to_base_path()
+    
+    def _create_csv_file(self, category: str, file: Path) -> None:
+        # on est au bon dossier on doit:
+        # - envoyer la bonne requête a chatGPT
+        # - écrire le fichier CSV
+        # words = self.computer.read_file(filename)
+        words = file.read_text()
+        question = ChatGPT.get_question_to_generate_csv(self.target_lang, self.native_lang, category, words)
+        response = self.gpt.answer_to_generate_lexicon(question, "", category)
+        # self.computer.write_file(filename=f'{letter}.txt', content=response)
 
 
 

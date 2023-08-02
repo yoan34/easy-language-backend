@@ -7,13 +7,13 @@ import openai
 load_dotenv()
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
-QUESTION_FOR_LIST_FORMAT = "Transform the following list of {} into the expected list of lists of {} without comments. {}"
+QUESTION_FOR_LIST_FORMAT = "Transform the following list of {} into the expected list of csv rows of {} without comments. {}"
 CONTEXT_FOR_LIST_FORMAT = """
 I'm giving you a list of {} and guidelines, you have to create a list of list. For each {}, you have to create list with:
 - first element, the {} word.
 - second element, the translation in {}. You can use two word for a better comprehension seperate by a '-'.
 - third element, the CEFR level between A1 and C2.
-- fourth element, the frequency of the word scored ranging from 1 for rarely used to 10 for very commonly used.
+- fourth element, the frequency of the word scored ranging from 1 for rarely used to 10 for very commonly used but you must using a range 1 to 10 for every CEFR level.
 {}
 return only the list of the lists in python format. Use double quote for elements of list."""
 

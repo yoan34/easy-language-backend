@@ -35,7 +35,7 @@ class Computer:
         self.logger.log(f"folder '{folder_path}' created successfully.")
         return self
 
-    def read_file(self, filename: str) -> list[str]:
+    def read_file(self, filename: str) -> List[str]:
         file_path = self.path / filename
         return file_path.read_text().splitlines()
 
@@ -54,7 +54,11 @@ class Computer:
         return self
 
     def change_directory(self, new_path: str) -> 'Computer':
-        full_path = self.path / new_path
+        if '..' in new_path:
+            full_path = self.path.parent / new_path.replace('../', '')
+        else:
+            full_path = self.path / new_path
+
         if self.path_exists(str(full_path)):
             self.path = full_path.resolve()
             self.logger.log(f"New path: {full_path}")

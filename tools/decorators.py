@@ -1,4 +1,6 @@
 from functools import wraps
+import time
+
 
 def chatgpt_log(func):
     @wraps(func)
@@ -10,6 +12,28 @@ def chatgpt_log(func):
         self.logger.log(f"{' ' * 8}[API_TOKENS] {tokens}")
         return answer
     return wrapper
+
+def retry_api_call(max_attempts=10, delay=1):
+    def decorator(api_call_func):
+        @wraps(api_call_func)
+        def wrapper(self, *args, **kwargs):
+            attempts = 0
+            success = False
+
+            while attempts < max_attempts and not success:
+                try:
+                    response = api_call_func(self, *args, **kwargs)
+                    success = True  # L'appel API a réussi, sortir de la boucle while
+                except Exception as e:
+                    self.logger.log(f"[ERROR_API] Error when call API: {e}")
+                    attempts += 1
+                    time.sleep(delay)
+
+            if not success:
+                self.logger.log(f"[FATAL_ERROR] Échec de l'appel API après {max_attempts} tentatives.")
+            return response
+        return wrapper
+    return decorator
 
 def handle_existence_errors(resource_type: str):
     def decorator(func):

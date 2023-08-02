@@ -6,7 +6,7 @@ class Logger:
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
 
-        file_handler = logging.FileHandler(filename)
+        file_handler = logging.FileHandler(f"../logs/{filename}")
         file_handler.setLevel(logging.INFO)
 
         console_handler = logging.StreamHandler()

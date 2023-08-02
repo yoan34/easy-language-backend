@@ -20,4 +20,6 @@ chatGPT = ChatGPT(logger)
 generator = Generator(computer, native_lang, target_lang, logger, chatGPT)
 
 
-generator.create_all_word_files()
+# generator.create_all_word_files()
+generator.fix_word_files_errors()
+generator.create_all_csv_files()
