@@ -15,6 +15,6 @@ generator = Generator(computer, native_lang, target_lang, logger, chatGPT4)
 
 
 # generator.create_all_word_files()
-generator.fix_word_files_errors()
-generator.create_all_csv_files()
-# generator.check_file_text_and_csv_same_length()
+# generator.fix_word_files_errors()
+# generator.create_all_csv_files()
+generator.compare_file_contents()

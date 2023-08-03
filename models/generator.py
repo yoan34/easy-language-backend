@@ -132,6 +132,13 @@ class Generator:
         question = ChatGPT.get_question_to_generate_csv(self.target_lang, self.native_lang, category, words)
         response = self.gpt.answer_to_generate_lexicon(question, "", category)
         self.computer.write_file(filename=f'{file.name[0]}.csv', content=response)
+        
+    def compare_file_contents(self):
+        for folder in self.computer.list_folders:
+            n_file_txt = self.computer.change_directory(f"{folder.name}/list").list_files
+            n_file_csv = self.computer.change_directory(f"../csv").list_files
+            print(f"TXT: {n_file_txt}    -    CSV: {n_file_csv}")
+            self.computer.comeback_to_base_path()
 
 
 
