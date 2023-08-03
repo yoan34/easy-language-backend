@@ -5,8 +5,9 @@ import time
 def chatgpt_log(func):
     @wraps(func)
     def wrapper(self, question, context, *args, **kwargs):
-        self.logger.log(f"{' ' * 8}[API_CONTEXT] {context}")
-        self.logger.log(f"{' ' * 8}[API_QUESTION] {question}")
+        self.logger.log(f"{' ' * 8}[CHAT_GPT_MODEL] {self.model.value}")
+        self.logger.log(f"{' ' * 8}[API_CONTEXT] {context}") if context else None
+        self.logger.log(f"{' ' * 8}[API_QUESTION] {question}") if question else None
         answer, tokens = func(self, question, context, *args, **kwargs)
         self.logger.log(f"{' ' * 8}[API_ANSWER] {answer.splitlines()}")
         self.logger.log(f"{' ' * 8}[API_TOKENS] {tokens}")

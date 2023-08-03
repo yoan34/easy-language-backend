@@ -1,6 +1,7 @@
-from models.logger import Logger
 import os
 import openai
+from models.logger import Logger
+from tools.enumerators import ModelType
 from dotenv import load_dotenv
 
 from tools.categories import (
@@ -15,23 +16,24 @@ load_dotenv()
 
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
+
 class ChatGPT:
-    def __init__(self, logger: Logger):
+    def __init__(self, logger: Logger, model: ModelType = ModelType.GPT_3_5_TURBO):
         self.logger = logger
+        self.model = model
         self.category_tokens = {'verb': 0, 'adverb': 0, 'noun': 0, 'adjective': 0}
 
     
     @chatgpt_log
     @retry_api_call(max_attempts=10, delay=2)
     def answer_to_generate_lexicon(self, question: str, context: str, type_word: str, temperature: float = 0.2):
-        answer, tokens = ChatGPT.answer(question, context, temperature)
+        answer, tokens = self.answer(question, context, temperature)
         self.category_tokens[type_word] += tokens
         return answer, tokens
 
-    @staticmethod
-    def answer(question: str, context: str, temperature: float = 0.2):
+    def answer(self, question: str, context: str, temperature: float = 0.2):
         completion = openai.ChatCompletion.create(
-            model="gpt-4",
+            model=self.model.value,
             messages=[
                 {'role': 'system', 'content': context},
                 {"role": "user", "content": question},

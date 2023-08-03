@@ -49,7 +49,7 @@ class Generator:
         for category in Generator.WORD_CATEGORIES:
             new_folder = f"{category}/list"
             self.computer.create_folder(new_folder).change_directory(new_folder)
-            for letter in Generator.ALPHABET[:10]:
+            for letter in Generator.ALPHABET[:1]:
                 if self.computer.file_exists(letter + '.txt'):
                     continue
                 self._create_word_file(category, letter)
@@ -132,7 +132,7 @@ class Generator:
         words = file.read_text()
         question = ChatGPT.get_question_to_generate_csv(self.target_lang, self.native_lang, category, words)
         response = self.gpt.answer_to_generate_lexicon(question, "", category)
-        # self.computer.write_file(filename=f'{letter}.txt', content=response)
+        self.computer.write_file(filename=f'{file.name[0]}.txt', content=response)
 
 
 
