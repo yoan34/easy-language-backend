@@ -118,7 +118,6 @@ class Generator:
             self.computer.create_folder(f"{category}/csv")
             files = self.computer.change_directory(f"{category}/list").list_files
             self.computer.change_directory('../csv')
-            print(f"HERE {self.computer.path}")
             for file in files:
                 if not self.computer.file_exists(file.name):
                     self._create_csv_file(category, file)
@@ -132,7 +131,7 @@ class Generator:
         words = file.read_text()
         question = ChatGPT.get_question_to_generate_csv(self.target_lang, self.native_lang, category, words)
         response = self.gpt.answer_to_generate_lexicon(question, "", category)
-        self.computer.write_file(filename=f'{file.name[0]}.txt', content=response)
+        self.computer.write_file(filename=f'{file.name[0]}.csv', content=response)
 
 
 
