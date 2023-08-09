@@ -39,11 +39,12 @@ include the definite article where applicable.
 """
 
 QUESTION_GENERATE_CSV_ROWS = """
-I'm giving you a list of {} and guidelines, you have to create a list of csv rows. For each {}, you have to create a row with:
+I'm giving you a list of {} and guidelines, you have to create a list of csv rows.The CSV separator is ";". For each {}, you have to create a row with:
 - first element, the {} word.
 - second element, the translation in {}. You can use two word for a better comprehension seperate by a '-'.
 - third element, the CEFR level between A1 and C2.
-- fourth element, the frequency of the word scored ranging from 1 for rarely used to 10 for very commonly used but you must using a range 1 to 10 for every CEFR level..{}
+- fourth element, the frequency of the word scored ranging from 1 for rarely used to 10 for very commonly used but you must using a range 1 to 10 for every CEFR level..
+{}
 return only the list of rows with one row per line. Here is the list of {}s:
 {}"""
 

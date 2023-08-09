@@ -49,7 +49,7 @@ class Generator:
         for category in Generator.WORD_CATEGORIES:
             new_folder = f"{category}/list"
             self.computer.create_folder(new_folder).change_directory(new_folder)
-            for letter in Generator.ALPHABET[:1]:
+            for letter in Generator.ALPHABET:
                 if self.computer.file_exists(letter + '.txt'):
                     continue
                 self._create_word_file(category, letter)
@@ -119,26 +119,32 @@ class Generator:
             files = self.computer.change_directory(f"{category}/list").list_files
             self.computer.change_directory('../csv')
             for file in files:
-                if not self.computer.file_exists(file.name):
+                if not self.computer.file_exists(f"{file.stem}.csv"):
                     self._create_csv_file(category, file)
             self.computer.comeback_to_base_path()
     
     def _create_csv_file(self, category: str, file: Path) -> None:
-        # on est au bon dossier on doit:
-        # - envoyer la bonne requête a chatGPT
-        # - écrire le fichier CSV
-        # words = self.computer.read_file(filename)
         words = file.read_text()
         question = ChatGPT.get_question_to_generate_csv(self.target_lang, self.native_lang, category, words)
         response = self.gpt.answer_to_generate_lexicon(question, "", category)
         self.computer.write_file(filename=f'{file.name[0]}.csv', content=response)
         
     def compare_file_contents(self):
+        errors = []
         for folder in self.computer.list_folders:
             n_file_txt = self.computer.change_directory(f"{folder.name}/list").list_files
             n_file_csv = self.computer.change_directory(f"../csv").list_files
-            print(f"TXT: {n_file_txt}    -    CSV: {n_file_csv}")
+            len_files_txt = sorted([len(self.computer.read_file(file)) for file in n_file_txt])
+            len_files_csv = sorted([len(self.computer.read_file(file)) for file in n_file_csv])
+            if len_files_txt != len_files_csv:
+                errors.append(f"error: {folder} -- len files txt: {len_files_txt} -- len files csv: {len_files_csv}")
             self.computer.comeback_to_base_path()
+        if errors:
+            for error in errors:
+                self.logger.log(error, level='error')
+        else:
+            self.logger.log("All file contents the same number of words.")
+        
 
 
 
